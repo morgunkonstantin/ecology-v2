@@ -6,12 +6,172 @@
   <atom:link href="https://morgunkonstantin.github.io/ecology-v2/feed.xml" rel="self" type="application/rss+xml"/>
   <description>Экология как способ смотреть на реальность</description>
   <language>ru</language>
-  <lastBuildDate>Sun, 01 Nov 2026 10:39:59 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 11 Nov 2026 14:49:26 +0000</lastBuildDate>
   <image>
     <url>https://morgunkonstantin.github.io/ecology-v2/assets/og-image.png</url>
     <title>ЭкоСознание</title>
     <link>https://morgunkonstantin.github.io/ecology-v2/</link>
   </image>
+  <item>
+    <title>Сеть знаний</title>
+    <link>https://morgunkonstantin.github.io/ecology-v2/essay-knowledge-web.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology-v2/essay-knowledge-web.html</guid>
+    <description>Идеи историка науки Джеймса Бёрка: нелинейность изобретений, редукционизм и экологический кризис, институты против нового, мозг и школа, культура изобилия, проект «Сеть знаний» — и сверка его прогнозов 2001 года с реальностью 2026-го.</description>
+    <category>Эссе</category>
+    <pubDate>Tue, 10 Nov 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Основы социологии</title>
+    <link>https://morgunkonstantin.github.io/ecology-v2/essay-sociology-basics.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology-v2/essay-sociology-basics.html</guid>
+    <description>Большой обзор социологии в хронологическом порядке: Конт, Спенсер, Маркс, Дюркгейм, Вебер, три парадигмы, Парсонс и Мертон, теория конфликта, символический интеракционизм, конструктивизм, теория элит, общественное мнение, Франкфуртская школа, Бурдьё и Гидденс — и что всё это значит для экологии.</description>
+    <category>Эссе</category>
+    <pubDate>Tue, 10 Nov 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Основы психологии</title>
+    <link>https://morgunkonstantin.github.io/ecology-v2/essay-psychology-basics.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology-v2/essay-psychology-basics.html</guid>
+    <description>Обзор главных школ психологии: критерии научности, психоанализ Фрейда и архетипы Юнга, бихевиоризм, гештальт, когнитивные искажения и КПТ, Пиаже, Выготский и Бандура, конформизм, защиты психики, интеллект — и что это значит для экологии.</description>
+    <category>Эссе</category>
+    <pubDate>Sun, 08 Nov 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>История психологии</title>
+    <link>https://morgunkonstantin.github.io/ecology-v2/essay-psychology-history.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology-v2/essay-psychology-history.html</guid>
+    <description>Хронология психологии от лаборатории Вундта до когнитивных искажений: Фрейд, гештальт, Уотсон, Юнг, Выготский, Скиннер, Аш и Милгрэм, когнитивная революция, Бандура, Бек и Эллис, Канеман и модель интеллекта CHC — кто, где, почему и что осталось.</description>
+    <category>Эссе</category>
+    <pubDate>Sun, 08 Nov 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Дождевая вода</title>
+    <link>https://morgunkonstantin.github.io/ecology-v2/essay-rainwater.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology-v2/essay-rainwater.html</guid>
+    <description>Как собирать и использовать дождевую воду: сколько её даёт крыша в разных городах России, устройство системы, баки, сброс первой воды, зима и мороз, насосы и фильтры, качество и уход.</description>
+    <category>Эссе</category>
+    <pubDate>Mon, 02 Nov 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Экономия воды</title>
+    <link>https://morgunkonstantin.github.io/ecology-v2/essay-water-saving.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology-v2/essay-water-saving.html</guid>
+    <description>Куда уходит вода в доме и как сократить её расход на треть без потери комфорта: лейки и аэраторы, унитазы с двойным смывом, стиральные и посудомоечные машины, поиск утечек и привычки.</description>
+    <category>Эссе</category>
+    <pubDate>Mon, 02 Nov 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Сад без лишней воды</title>
+    <link>https://morgunkonstantin.github.io/ecology-v2/essay-water-wise-garden.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology-v2/essay-water-wise-garden.html</guid>
+    <description>Как устроить сад и огород, которым нужно мало полива: зонирование, растения по климату, меньше газона, мульча, почва, правильный и капельный полив и экономия воды за пределами сада.</description>
+    <category>Эссе</category>
+    <pubDate>Mon, 02 Nov 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Стройка без горы мусора</title>
+    <link>https://morgunkonstantin.github.io/ecology-v2/essay-construction-waste.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology-v2/essay-construction-waste.html</guid>
+    <description>Как сократить отходы при строительстве и ремонте дома: состав строительного мусора, правило «сократить — использовать повторно — переработать», решения на этапе проекта, в договоре и на стройплощадке, опасные отходы.</description>
+    <category>Эссе</category>
+    <pubDate>Mon, 02 Nov 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Проектирование под климат</title>
+    <link>https://morgunkonstantin.github.io/ecology-v2/essay-design-climate.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology-v2/essay-design-climate.html</guid>
+    <description>Как спроектировать дом под свой климат: градусо-сутки, пять климатов России, шесть рычагов пассивного дизайна, солнце, ветер, снег и мерзлота, микроклимат участка и чек-лист перед проектом.</description>
+    <category>Эссе</category>
+    <pubDate>Mon, 02 Nov 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Пассивное охлаждение</title>
+    <link>https://morgunkonstantin.github.io/ecology-v2/essay-passive-cooling.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology-v2/essay-passive-cooling.html</guid>
+    <description>Как сохранить прохладу в доме в жару почти без электричества: тень на окнах, крыша, ночное проветривание, сквозняк и тяга, вентиляторы, разумный кондиционер, решения по климатам России и для обычной квартиры.</description>
+    <category>Эссе</category>
+    <pubDate>Mon, 02 Nov 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Возобновляемая энергия дома</title>
+    <link>https://morgunkonstantin.github.io/ecology-v2/essay-renewable-energy.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology-v2/essay-renewable-energy.html</guid>
+    <description>Какие домашние технологии возобновляемой энергии имеют смысл в российском климате: тепловые насосы, солнце, дрова, ветер и микро-ГЭС, микрогенерация до 15 кВт, автономные системы и правильный порядок шагов.</description>
+    <category>Эссе</category>
+    <pubDate>Mon, 02 Nov 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Солнечные панели на крыше</title>
+    <link>https://morgunkonstantin.github.io/ecology-v2/essay-rooftop-solar.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology-v2/essay-rooftop-solar.html</guid>
+    <description>Сколько энергии дают солнечные панели в разных городах России, лето и зима, сетевые и автономные системы, размер, ориентация и наклон, снег и мороз, окупаемость, выбор, гарантии и уход.</description>
+    <category>Эссе</category>
+    <pubDate>Mon, 02 Nov 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Отпуск без следа</title>
+    <link>https://morgunkonstantin.github.io/ecology-v2/essay-leave-no-trace.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology-v2/essay-leave-no-trace.html</guid>
+    <description>Как отдыхать в лесу, в горах и у воды так, чтобы после нас природа осталась такой же: семь принципов «не оставляй следов», костёр, мусор, туалет и вода, походный набор.</description>
+    <category>Эссе</category>
+    <pubDate>Sun, 01 Nov 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Почва — живая</title>
+    <link>https://morgunkonstantin.github.io/ecology-v2/essay-living-soil.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology-v2/essay-living-soil.html</guid>
+    <description>Почва — одна из самых богатых жизнью сред на Земле: бактерии, грибы, черви и клещи, почвенный профиль, углерод в земле и почему перекопка вредит.</description>
+    <category>Эссе</category>
+    <pubDate>Sun, 01 Nov 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Воздух, которым мы дышим</title>
+    <link>https://morgunkonstantin.github.io/ecology-v2/essay-clean-air.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology-v2/essay-clean-air.html</guid>
+    <description>Что такое PM2.5 и диоксид азота, почему ВОЗ ужесточила нормы в 2021 году, какие источники загрязнения есть дома и что реально помогает дышать чище.</description>
+    <category>Эссе</category>
+    <pubDate>Sun, 01 Nov 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Полторы тонны: углеродный бюджет одного человека</title>
+    <link>https://morgunkonstantin.github.io/ecology-v2/essay-carbon-budget.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology-v2/essay-carbon-budget.html</guid>
+    <description>Какой углеродный след на человека совместим с целью 1,5 °C, сколько выбрасывают страны, что весит одна тонна CO₂ и какие личные решения дают больше всего.</description>
+    <category>Эссе</category>
+    <pubDate>Sun, 01 Nov 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Жара и здоровье</title>
+    <link>https://morgunkonstantin.github.io/ecology-v2/essay-heat-health.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology-v2/essay-heat-health.html</guid>
+    <description>Волны жары — одна из самых смертоносных климатических угроз в городах: что жара делает с телом, кто в группе риска, как отличить тепловое истощение от теплового удара, как сохранить прохладу дома без кондиционера, как защитить пожилых и что может сделать город. Пять инфографик.</description>
+    <category>Эссе</category>
+    <pubDate>Sun, 01 Nov 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Экологическая тревога у детей: как с ней говорить</title>
+    <link>https://morgunkonstantin.github.io/ecology-v2/essay-kids-eco-anxiety.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology-v2/essay-kids-eco-anxiety.html</guid>
+    <description>Практическое руководство для родителей и учителей: что такое экологическая тревога, как говорить о климате с детьми 3–6, 7–11 и 12+ лет, какие фразы помогают, а какие ранят, какая надежда работает, как превратить тревогу в общее дело и когда нужна помощь специалиста. Пять инфографик.</description>
+    <category>Эссе</category>
+    <pubDate>Sun, 01 Nov 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Как отличить честный углеродный офсет от продажи воздуха</title>
+    <link>https://morgunkonstantin.github.io/ecology-v2/essay-carbon-offsets.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology-v2/essay-carbon-offsets.html</guid>
+    <description>Как устроены углеродные кредиты, пять ловушек — дополнительность, базовый сценарий, постоянство, утечка, двойной счёт, — что показали независимые проверки, почему посадки деревьев плохо работают как «компенсация», лестница качества кредитов, чек-лист из десяти вопросов и новые правила. Пять инфографик.</description>
+    <category>Эссе</category>
+    <pubDate>Sun, 01 Nov 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Город, который пьёт дождь</title>
+    <link>https://morgunkonstantin.github.io/ecology-v2/essay-sponge-city.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology-v2/essay-sponge-city.html</guid>
+    <description>Городской остров тепла и ливни, которым некуда деться: как деревья охлаждают город и задерживают дождь, почему одно взрослое дерево ценнее десяти саженцев, правило 3-30-300, города-губки Китая, Копенгагена и Роттердама и что могут сделать жители. Пять инфографик.</description>
+    <category>Эссе</category>
+    <pubDate>Sun, 01 Nov 2026 09:00:00 +0000</pubDate>
+  </item>
   <item>
     <title>Компост в квартире</title>
     <link>https://morgunkonstantin.github.io/ecology-v2/essay-apartment-compost.html</link>
@@ -587,6 +747,14 @@
     <pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
   </item>
   <item>
+    <title>Компост на даче: от кучи до тёплой грядки</title>
+    <link>https://morgunkonstantin.github.io/ecology-v2/essay-dacha-compost.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology-v2/essay-dacha-compost.html</guid>
+    <description>Как устроить компостную кучу на даче: зелёное и коричневое, влага и воздух, горячий и холодный компост, тёплая грядка и частые ошибки.</description>
+    <category>Эссе</category>
+    <pubDate>Sun, 01 Nov 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
     <title>Демархия: что если решения принимать жребием?</title>
     <link>https://morgunkonstantin.github.io/ecology-v2/essay-demarchy.html</link>
     <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology-v2/essay-demarchy.html</guid>
@@ -625,6 +793,14 @@
     <description>Earthship — автономный дом Майкла Рейнольдса из шин, набитых землёй, с бутылочными перегородками, стеклянным южным фасадом, замкнутым круговоротом дождевой воды и солнечной энергией. Как эти системы сведены в единую замкнутую экосистему, история из пустыни Нью-Мексико, и честная цена автономии.</description>
     <category>Эссе</category>
     <pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Экологическая тропа у школы</title>
+    <link>https://morgunkonstantin.github.io/ecology-v2/essay-eco-trail.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology-v2/essay-eco-trail.html</guid>
+    <description>Пошаговый план, как школе за один сезон сделать экологическую тропу: маршрут, восемь остановок, таблички, наблюдения учеников и план на год.</description>
+    <category>Эссе</category>
+    <pubDate>Sun, 01 Nov 2026 09:00:00 +0000</pubDate>
   </item>
   <item>
     <title>Карта выбросов: где на самом деле углерод</title>
@@ -667,6 +843,14 @@
     <pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
   </item>
   <item>
+    <title>Горячая вода</title>
+    <link>https://morgunkonstantin.github.io/ecology-v2/essay-hot-water.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology-v2/essay-hot-water.html</guid>
+    <description>Как греть воду экономнее и чище: тепловые насосы, солнечные коллекторы, электробойлеры и газ, горячая вода в квартире, монтаж, безопасная температура, привычки и время нагрева.</description>
+    <category>Эссе</category>
+    <pubDate>Mon, 02 Nov 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
     <title>Кривая Килинга: как увидели, что воздух меняется</title>
     <link>https://morgunkonstantin.github.io/ecology-v2/essay-keeling-curve.html</link>
     <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology-v2/essay-keeling-curve.html</guid>
@@ -707,6 +891,14 @@
     <pubDate>Tue, 19 May 2026 09:00:00 +0000</pubDate>
   </item>
   <item>
+    <title>Пассивное отопление</title>
+    <link>https://morgunkonstantin.github.io/ecology-v2/essay-passive-heating.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology-v2/essay-passive-heating.html</guid>
+    <description>Как дом может греться солнцем: пять задач пассивного отопления, сколько солнца зимой в разных городах России, тепловая масса и русская печь, окна, козырьки, планировка и утепление.</description>
+    <category>Эссе</category>
+    <pubDate>Mon, 02 Nov 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
     <title>Прессованная земля (rammed earth): стена в полоску</title>
     <link>https://morgunkonstantin.github.io/ecology-v2/essay-rammed-earth.html</link>
     <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology-v2/essay-rammed-earth.html</guid>
@@ -721,6 +913,14 @@
     <description>Вторичные материалы — балки, кирпич, окна и двери из разобранных зданий, взятые повторно с почти отрицательной воплощённой энергией. Чем повторное использование отличается от переработки, почему старый лес и кирпич часто лучше нового, двойная экономия для планеты, и честные ограничения — труд разборки, непредсказуемость, безопасность и нормы.</description>
     <category>Эссе</category>
     <pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Еда сезона и места</title>
+    <link>https://morgunkonstantin.github.io/ecology-v2/essay-seasonal-food.html</link>
+    <guid isPermaLink="true">https://morgunkonstantin.github.io/ecology-v2/essay-seasonal-food.html</guid>
+    <description>Что даёт сезонная и местная еда, где её польза преувеличена, календарь продуктов средней полосы, данные об углеродном следе и способы заготовки.</description>
+    <category>Эссе</category>
+    <pubDate>Sun, 01 Nov 2026 09:00:00 +0000</pubDate>
   </item>
   <item>
     <title>Маленький дом: сорок метров, спроектированных как сто</title>
