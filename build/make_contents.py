@@ -22,7 +22,8 @@ META = json.load(open("build/pages.json", encoding="utf-8"))
 
 SEC_ORDER = ["philosophy", "psychology", "lifestyle", "technologies", "food", "compost",
              "architecture", "construction", "economy", "education", "community",
-             "travel", "health", "science", "humanities", "natural-sciences"]
+             "travel", "health", "science", "humanities", "natural-sciences",
+             "psychology-schools", "ecopsychology"]
 
 STYLE = """
 <style>
@@ -107,11 +108,13 @@ def build():
             by_section[st].append(fn)
     for st in by_section:
         by_section[st].sort(key=lambda fn: META[fn]["title"])
-    for sh in ("section-humanities.html", "section-natural-sciences.html"):
-        if sh in META:
-            by_section.setdefault("Наука", [])
-            if sh not in by_section["Наука"]:
-                by_section["Наука"].insert(0, sh)
+    for sec, hubs in (("Наука", ("section-humanities.html", "section-natural-sciences.html")),
+                      ("Психология", ("section-ecopsychology.html", "section-psychology-schools.html"))):
+        for sh in hubs:  # insert(0) — последний в списке встанет первым
+            if sh in META:
+                by_section.setdefault(sec, [])
+                if sh not in by_section[sec]:
+                    by_section[sec].insert(0, sh)
 
     HIER = [
         ("Философия", "section-philosophy.html", []),

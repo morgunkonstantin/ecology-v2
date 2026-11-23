@@ -817,6 +817,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://morgunkonstantin.github.io/ecology-v2/section-psychology-schools.html</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://morgunkonstantin.github.io/ecology-v2/section-ecopsychology.html</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://morgunkonstantin.github.io/ecology-v2/section-lifestyle.html</loc>
     <lastmod>2026-11-11</lastmod>
     <changefreq>weekly</changefreq>
@@ -836,7 +848,7 @@
   </url>
   <url>
     <loc>https://morgunkonstantin.github.io/ecology-v2/section-psychology.html</loc>
-    <lastmod>2026-11-11</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>

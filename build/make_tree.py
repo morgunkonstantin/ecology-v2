@@ -83,13 +83,16 @@ def build_data():
             g["sub"] = subs
         if g["c"] or g["u"] or g.get("sub"):
             by_sec.append(g)
-    sci = [i for i in items if i["u"] in ("section-humanities.html", "section-natural-sciences.html")]
+    # подразделы-обзоры стоят первыми в списке своего раздела
+    SUBHUBS = {"Наука": ("section-humanities.html", "section-natural-sciences.html"),
+               "Психология": ("section-psychology-schools.html", "section-ecopsychology.html")}
+    ALL_SUBHUBS = {u for v in SUBHUBS.values() for u in v}
     for g in by_sec:
-        if g["n"] == "Наука" and sci:
-            g["c"] = sci + g["c"]
-            break
+        hubs = [i for i in items if i["u"] in SUBHUBS.get(g["n"], ())]
+        if hubs:
+            g["c"] = hubs + g["c"]
     rest = [i for i in items if not i["s"] and i["r"] != "Раздел"
-            and i["u"] not in ("section-humanities.html", "section-natural-sciences.html")]
+            and i["u"] not in ALL_SUBHUBS]
     if rest:
         by_sec.append({"n": "Вне разделов", "u": "", "c": rest})
 
