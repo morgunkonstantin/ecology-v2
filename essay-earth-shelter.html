@@ -324,6 +324,7 @@ h2.light em{color:var(--fern);}
   <a href="#physics">Почему работает</a>
   <a href="#history">Откуда взялось</a>
   <a href="#limits">Плюсы и ограничения</a>
+  <a href="#photos">Фото</a>
   <a href="#outro">Итог</a>
 </div>
 
@@ -386,6 +387,76 @@ h2.light em{color:var(--fern);}
     <p>Отсюда и область применения, узкая, но чёткая: холодный и континентальный климат, склоны с южной экспозицией и сухие, хорошо дренируемые грунты. Там, где эти условия сходятся, землянка почти вне конкуренции; там, где не сходятся, за неё лучше не браться.</p>
   </div>
 </section>
+
+<!-- ECO:MANAGED:photos -->
+<style>
+/* ECO:MANAGED — фотографии: плитка и просмотр */
+.eco-photos-grid{columns:4 220px;column-gap:12px;margin-top:2rem;}
+.eco-photo{position:relative;margin:0 0 12px;break-inside:avoid;overflow:hidden;border-radius:3px;background:var(--warm);}
+.eco-photo a.eco-photo-img{display:block;cursor:zoom-in;}
+.eco-photo img{width:100%;height:auto;display:block;transition:transform .6s ease,filter .4s ease;}
+.eco-photo a.eco-photo-img:hover img,.eco-photo a.eco-photo-img:focus-visible img{transform:scale(1.035);filter:brightness(1.04);}
+.eco-photo figcaption{position:absolute;left:0;right:0;bottom:0;padding:1.6rem .8rem .55rem;font-size:.7rem;letter-spacing:.03em;color:#fff;background:linear-gradient(transparent,rgba(20,30,22,.62));opacity:0;transition:opacity .3s;pointer-events:none;}
+.eco-photo:hover figcaption,.eco-photo:focus-within figcaption{opacity:1;}
+.eco-photo figcaption a{color:#fff;text-decoration:none;border-bottom:1px dotted rgba(255,255,255,.7);pointer-events:auto;}
+@media(hover:none){.eco-photo figcaption{opacity:1;}}
+html .eco-photos-grid.eco-photos-grid--1{columns:1;max-width:560px;}.eco-photos-grid--2{columns:2;max-width:820px;}.eco-photos-grid--3{columns:3;}
+/* в статьях с узкой колонкой (article.essay) галерея от 4 фото выходит на всю ширину окна, с полями 4rem, как на остальных страницах */
+@media(min-width:721px){.essay .eco-photos-grid:not(.eco-photos-grid--1):not(.eco-photos-grid--2):not(.eco-photos-grid--3){width:calc(100vw - 8rem);max-width:none;margin-left:calc(50% - 50vw + 4rem);}}
+.eco-photos-lead{max-width:820px;}
+.eco-photos-note{margin-top:1.2rem;font-size:.72rem;color:var(--ink-light);font-style:italic;max-width:820px;}
+@media(max-width:560px){.eco-photos-grid,.essay .eco-photos-grid{columns:2;column-gap:8px;}.eco-photo{margin-bottom:8px;}.eco-photo figcaption{font-size:.6rem;padding:1.2rem .5rem .4rem;}}
+.eco-lb{position:fixed;inset:0;z-index:9999;background:rgba(16,24,18,.94);display:none;align-items:center;justify-content:center;flex-direction:column;}
+.eco-lb.open{display:flex;}
+.eco-lb img{max-width:min(92vw,1400px);max-height:80vh;object-fit:contain;display:block;box-shadow:0 10px 40px rgba(0,0,0,.4);}
+.eco-lb-cap{margin-top:1rem;max-width:min(92vw,900px);text-align:center;color:rgba(243,237,227,.85);font-size:.82rem;line-height:1.5;padding:0 1rem;}
+.eco-lb-cap a{color:var(--sage);text-decoration:none;border-bottom:1px dotted currentColor;}
+.eco-lb-n{color:rgba(243,237,227,.5);font-size:.7rem;letter-spacing:.15em;margin-top:.4rem;}
+.eco-lb button{position:absolute;background:none;border:0;color:#f3ede3;cursor:pointer;font:300 2.4rem/1 "Jost",sans-serif;padding:1rem;opacity:.75;transition:opacity .2s;}
+.eco-lb button:hover,.eco-lb button:focus-visible{opacity:1;}
+.eco-lb-x{top:.5rem;right:.8rem;}.eco-lb-p{left:.5rem;top:50%;transform:translateY(-50%);}.eco-lb-nx{right:.5rem;top:50%;transform:translateY(-50%);}
+@media(max-width:560px){.eco-lb button{font-size:1.9rem;padding:.6rem;}.eco-lb img{max-height:72vh;}}
+</style>
+<script>
+/* ECO:MANAGED — просмотр фото поверх страницы */
+(function(){if(window.__ecoLb)return;window.__ecoLb=1;
+function init(){var items=[].slice.call(document.querySelectorAll(".eco-photo a.eco-photo-img"));if(!items.length)return;
+ var lb=document.createElement("div");lb.className="eco-lb";lb.setAttribute("role","dialog");lb.setAttribute("aria-modal","true");lb.setAttribute("aria-label","Просмотр фотографии");
+ lb.innerHTML='<button class="eco-lb-x" aria-label="Закрыть">×</button><button class="eco-lb-p" aria-label="Предыдущее фото">‹</button><button class="eco-lb-nx" aria-label="Следующее фото">›</button><img alt=""><div class="eco-lb-cap"></div><div class="eco-lb-n"></div>';
+ document.body.appendChild(lb);var im=lb.querySelector("img"),cap=lb.querySelector(".eco-lb-cap"),num=lb.querySelector(".eco-lb-n"),cur=0,back=null;
+ function show(i){cur=(i+items.length)%items.length;var a=items[cur],t=a.querySelector("img"),fc=a.parentNode.querySelector("figcaption");
+  im.src=a.getAttribute("href");im.alt=t.alt;cap.innerHTML="";cap.appendChild(document.createTextNode(t.alt+" "));if(fc){var c=fc.cloneNode(true);cap.appendChild(document.createTextNode("· "));while(c.firstChild)cap.appendChild(c.firstChild);}
+  num.textContent=(cur+1)+" / "+items.length;}
+ function open(i){back=document.activeElement;show(i);lb.classList.add("open");document.documentElement.style.overflow="hidden";lb.querySelector(".eco-lb-x").focus();}
+ function close(){lb.classList.remove("open");im.removeAttribute("src");document.documentElement.style.overflow="";if(back)back.focus();}
+ items.forEach(function(a,i){a.addEventListener("click",function(e){if(e.metaKey||e.ctrlKey||e.shiftKey)return;e.preventDefault();open(i);});});
+ lb.querySelector(".eco-lb-x").onclick=close;lb.querySelector(".eco-lb-p").onclick=function(){show(cur-1);};lb.querySelector(".eco-lb-nx").onclick=function(){show(cur+1);};
+ lb.addEventListener("click",function(e){if(e.target===lb)close();});
+ document.addEventListener("keydown",function(e){if(!lb.classList.contains("open"))return;if(e.key==="Escape")close();else if(e.key==="ArrowLeft")show(cur-1);else if(e.key==="ArrowRight")show(cur+1);});
+ var sx=null;lb.addEventListener("touchstart",function(e){sx=e.touches[0].clientX;},{passive:true});lb.addEventListener("touchend",function(e){if(sx===null)return;var dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>50)show(cur+(dx<0?1:-1));sx=null;});
+}
+if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();})();
+</script>
+<section class="content-section eco-photos" id="photos">
+  <div>
+    <div class="section-num">—</div>
+    <h2>Как это <em>выглядит вживую</em></h2>
+    <p class="eco-photos-lead">Дом, укрытый землёй: стены, врезанные в склон, травяные крыши и даже жильё, вырубленное в скале, — земля как утеплитель и защита.</p>
+<div class="eco-photos-grid">
+  <figure class="eco-photo"><a class="eco-photo-img" href="assets/img/photos/earth-shelter/architamoda_DFDHf7IRtJV_3.jpg"><img src="assets/img/photos/earth-shelter/architamoda_DFDHf7IRtJV_3-sm.jpg" srcset="assets/img/photos/earth-shelter/architamoda_DFDHf7IRtJV_3-sm.jpg 448w, assets/img/photos/earth-shelter/architamoda_DFDHf7IRtJV_3.jpg 864w" sizes="(max-width:560px) 50vw, 320px" width="448" height="560" loading="lazy" decoding="async" alt="Дом со скруглёнными земляными стенами, врезанный в склон: на крыше растёт трава, к двери ведёт каменная лестница."></a><figcaption>Фото: <a href="https://www.instagram.com/p/DFDHf7IRtJV/" target="_blank" rel="noopener nofollow">@architamoda</a></figcaption></figure>
+  <figure class="eco-photo"><a class="eco-photo-img" href="assets/img/photos/earth-shelter/architamoda_DFDHf7IRtJV_9.jpg"><img src="assets/img/photos/earth-shelter/architamoda_DFDHf7IRtJV_9-sm.jpg" srcset="assets/img/photos/earth-shelter/architamoda_DFDHf7IRtJV_9-sm.jpg 448w, assets/img/photos/earth-shelter/architamoda_DFDHf7IRtJV_9.jpg 864w" sizes="(max-width:560px) 50vw, 320px" width="448" height="560" loading="lazy" decoding="async" alt="Застеклённый павильон-библиотека под зелёной крышей, встроенный в склон среди дубов."></a><figcaption>Фото: <a href="https://www.instagram.com/p/DFDHf7IRtJV/" target="_blank" rel="noopener nofollow">@architamoda</a></figcaption></figure>
+  <figure class="eco-photo"><a class="eco-photo-img" href="assets/img/photos/earth-shelter/architamoda_DFDHf7IRtJV_4.jpg"><img src="assets/img/photos/earth-shelter/architamoda_DFDHf7IRtJV_4-sm.jpg" srcset="assets/img/photos/earth-shelter/architamoda_DFDHf7IRtJV_4-sm.jpg 448w, assets/img/photos/earth-shelter/architamoda_DFDHf7IRtJV_4.jpg 864w" sizes="(max-width:560px) 50vw, 320px" width="448" height="560" loading="lazy" decoding="async" alt="Большие окна в раме из тёмного металла открываются прямо в земляной склон; к входу ведут каменные ступени."></a><figcaption>Фото: <a href="https://www.instagram.com/p/DFDHf7IRtJV/" target="_blank" rel="noopener nofollow">@architamoda</a></figcaption></figure>
+  <figure class="eco-photo"><a class="eco-photo-img" href="assets/img/photos/earth-shelter/architamoda_DFDHf7IRtJV_2.jpg"><img src="assets/img/photos/earth-shelter/architamoda_DFDHf7IRtJV_2-sm.jpg" srcset="assets/img/photos/earth-shelter/architamoda_DFDHf7IRtJV_2-sm.jpg 448w, assets/img/photos/earth-shelter/architamoda_DFDHf7IRtJV_2.jpg 864w" sizes="(max-width:560px) 50vw, 320px" width="448" height="560" loading="lazy" decoding="async" alt="Вход в дом сквозь толщу земляной стены, над дверью свисает зелень с крыши."></a><figcaption>Фото: <a href="https://www.instagram.com/p/DFDHf7IRtJV/" target="_blank" rel="noopener nofollow">@architamoda</a></figcaption></figure>
+  <figure class="eco-photo"><a class="eco-photo-img" href="assets/img/photos/earth-shelter/architamoda_DFDHf7IRtJV_10.jpg"><img src="assets/img/photos/earth-shelter/architamoda_DFDHf7IRtJV_10-sm.jpg" srcset="assets/img/photos/earth-shelter/architamoda_DFDHf7IRtJV_10-sm.jpg 448w, assets/img/photos/earth-shelter/architamoda_DFDHf7IRtJV_10.jpg 864w" sizes="(max-width:560px) 50vw, 320px" width="448" height="560" loading="lazy" decoding="async" alt="Застеклённый дом под травяной кровлей у каменной стены, к нему ведёт дорожка через цветущий сад."></a><figcaption>Фото: <a href="https://www.instagram.com/p/DFDHf7IRtJV/" target="_blank" rel="noopener nofollow">@architamoda</a></figcaption></figure>
+  <figure class="eco-photo"><a class="eco-photo-img" href="assets/img/photos/earth-shelter/nowoczesnastodola_CZrbzLYImrt_4.jpg"><img src="assets/img/photos/earth-shelter/nowoczesnastodola_CZrbzLYImrt_4-sm.jpg" srcset="assets/img/photos/earth-shelter/nowoczesnastodola_CZrbzLYImrt_4-sm.jpg 560w, assets/img/photos/earth-shelter/nowoczesnastodola_CZrbzLYImrt_4.jpg 1080w" sizes="(max-width:560px) 50vw, 320px" width="560" height="419" loading="lazy" decoding="async" alt="Длинный низкий дом с каменными стенами, вписанный в травянистый склон на фоне гор."></a><figcaption>Фото: <a href="https://www.instagram.com/p/CZrbzLYImrt/" target="_blank" rel="noopener nofollow">@nowoczesnastodola</a></figcaption></figure>
+  <figure class="eco-photo"><a class="eco-photo-img" href="assets/img/photos/earth-shelter/mune_architecture_Cx0nJHnsME9_1.jpg"><img src="assets/img/photos/earth-shelter/mune_architecture_Cx0nJHnsME9_1-sm.jpg" srcset="assets/img/photos/earth-shelter/mune_architecture_Cx0nJHnsME9_1-sm.jpg 455w, assets/img/photos/earth-shelter/mune_architecture_Cx0nJHnsME9_1.jpg 877w" sizes="(max-width:560px) 50vw, 320px" width="455" height="560" loading="lazy" decoding="async" alt="Каменный дом, врезанный в лесистый склон, с террасами и узким бассейном вдоль подпорной стены."></a><figcaption>Фото: <a href="https://www.instagram.com/p/Cx0nJHnsME9/" target="_blank" rel="noopener nofollow">@mune_architecture</a></figcaption></figure>
+  <figure class="eco-photo"><a class="eco-photo-img" href="assets/img/photos/earth-shelter/tinyhouseattractive_DJRhb6as6ly_7.jpg"><img src="assets/img/photos/earth-shelter/tinyhouseattractive_DJRhb6as6ly_7-sm.jpg" srcset="assets/img/photos/earth-shelter/tinyhouseattractive_DJRhb6as6ly_7-sm.jpg 448w, assets/img/photos/earth-shelter/tinyhouseattractive_DJRhb6as6ly_7.jpg 864w" sizes="(max-width:560px) 50vw, 320px" width="448" height="560" loading="lazy" decoding="async" alt="Арочный вход в пещерный дом в белой скале, над ним — навес из зелени, перед ним — терраса с подушками."></a><figcaption>Фото: <a href="https://www.instagram.com/p/DJRhb6as6ly/" target="_blank" rel="noopener nofollow">@tinyhouseattractive</a></figcaption></figure>
+  <figure class="eco-photo"><a class="eco-photo-img" href="assets/img/photos/earth-shelter/tinyhouseattractive_DJRhb6as6ly_2.jpg"><img src="assets/img/photos/earth-shelter/tinyhouseattractive_DJRhb6as6ly_2-sm.jpg" srcset="assets/img/photos/earth-shelter/tinyhouseattractive_DJRhb6as6ly_2-sm.jpg 448w, assets/img/photos/earth-shelter/tinyhouseattractive_DJRhb6as6ly_2.jpg 864w" sizes="(max-width:560px) 50vw, 320px" width="448" height="560" loading="lazy" decoding="async" alt="Интерьер дома, вырубленного в скале: белёные своды, ниши, лестница и большое окно."></a><figcaption>Фото: <a href="https://www.instagram.com/p/DJRhb6as6ly/" target="_blank" rel="noopener nofollow">@tinyhouseattractive</a></figcaption></figure>
+</div>
+<p class="eco-photos-note">Фотографии принадлежат авторам, указанным под снимками; подпись ведёт на исходную публикацию в Instagram.</p>
+  </div>
+</section>
+<!-- /ECO:MANAGED:photos -->
 
 <!-- ═══ ИТОГ ══════════════════════════════════════════════════════════════ -->
 <section class="content-section alt" id="outro">
