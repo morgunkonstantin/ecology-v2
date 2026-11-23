@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+<head>
+<script>document.documentElement.classList.replace('no-js','js');</script>
+<meta charset="UTF-8">
+<meta name="description" content="Тело и планета — одна система. One Health, циркадные ритмы, экспозом и природа как медицина.">
+<meta property="og:title" content="Здоровье — ЭкоСознание">
+<meta property="og:description" content="Тело и планета — одна система. One Health, циркадные ритмы, экспозом и природа как медицина.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Здоровье — ЭкоСознание</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/base.css">
+<style>
+.hero{padding:10rem 4rem 5rem;display:grid;grid-template-columns:1fr 380px;gap:4rem;align-items:end;border-bottom:1px solid rgba(74,124,89,.15);position:relative;overflow:hidden;}
+.hero-mark-svg{position:absolute;right:4rem;top:11rem;width:90px;height:90px;color:rgba(74,124,89,.18);pointer-events:none;}
+.hero-mark-svg svg{width:100%;height:100%;display:block;}
+.hero-tag{display:inline-flex;align-items:center;gap:.6rem;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--moss);margin-bottom:1.5rem;}
+.hero-tag::before{content:'';display:block;width:24px;height:1px;background:var(--fern);}
+h1{font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,6vw,5rem);font-weight:300;line-height:1.05;color:var(--ink);margin-bottom:1.8rem;}
+h1 em{font-style:italic;color:var(--moss);display:block;}
+.hero-lead{font-size:1rem;line-height:1.85;color:var(--ink-light);max-width:580px;}
+.hero-meta{display:flex;flex-direction:column;gap:1.5rem;padding-left:2rem;border-left:1px solid rgba(74,124,89,.2);}
+.meta-label{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sage);margin-bottom:.4rem;}
+.meta-value{font-size:.9rem;color:var(--ink-light);line-height:1.6;}
+.toc-bar{background:var(--ink);padding:0 4rem;display:flex;align-items:stretch;overflow-x:auto;}
+.toc-bar a{color:rgba(211,230,208,.6);text-decoration:none;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;padding:1rem 1.5rem;border-right:1px solid rgba(255,255,255,.06);white-space:nowrap;transition:color .2s,background .2s;}
+.toc-bar a:hover{color:var(--mist);}
+.toc-bar a.active{color:var(--fern);}
+.content-section{padding:5rem 4rem;border-bottom:1px solid rgba(74,124,89,.1);}
+.content-section.alt{background:var(--cream);}
+.content-section.dark{background:var(--ink);}
+.section-label{display:flex;align-items:center;gap:1rem;margin-bottom:3rem;}
+.section-label-num{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--sage);}
+.section-label-line{flex:1;height:1px;background:rgba(74,124,89,.15);}
+.section-label-tag{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--moss);}
+h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:300;color:var(--ink);line-height:1.15;margin-bottom:1.5rem;}
+h2 em{font-style:italic;color:var(--moss);}
+h2.light{color:var(--cream);}
+h2.light em{color:var(--fern);}
+.article-layout{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;}
+.article-layout.wide{grid-template-columns:3fr 2fr;}
+.article-body p{font-size:.95rem;line-height:1.9;color:var(--ink-light);margin-bottom:1.1rem;}
+.article-body p:last-child{margin-bottom:0;}
+.article-body p.light{color:rgba(211,230,208,.72);}
+.pull-quote{border-left:3px solid var(--moss);padding:1.2rem 1.5rem;margin:2rem 0;background:rgba(74,124,89,.05);}
+.pull-quote p{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-style:italic;color:var(--ink);line-height:1.5;margin:0!important;}
+.pull-quote.light{background:rgba(255,255,255,.06);border-color:var(--fern);}
+.pull-quote.light p{color:var(--cream);}
+.pull-quote cite{display:block;margin-top:.6rem!important;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--sage);font-style:normal;}
+.practices-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(74,124,89,.12);margin-top:2rem;}
+.practice-card{background:var(--paper);padding:2rem 1.8rem;transition:background .25s;}
+.content-section.alt .practice-card{background:var(--cream);}
+.practice-card:hover{background:var(--warm);}
+.practice-num{font-family:'Cormorant Garamond',serif;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--clay);margin-bottom:.6rem;}
+.practice-name{font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--ink);margin-bottom:.6rem;}
+.practice-name em{font-style:italic;color:var(--moss);}
+.practice-desc{font-size:.85rem;line-height:1.75;color:var(--ink-light);}
+.featured-strip{background:var(--ink);padding:3rem 3.5rem;display:grid;grid-template-columns:1fr auto;gap:3rem;align-items:center;margin-top:3rem;}
+.featured-label{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--sage);margin-bottom:1rem;}
+.featured-strip h3{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;font-style:italic;color:var(--cream);margin-bottom:.8rem;line-height:1.2;}
+.featured-strip p{font-size:.87rem;line-height:1.8;color:rgba(211,230,208,.68);}
+.featured-btn{background:transparent;color:var(--fern);border:1px solid rgba(110,168,126,.4);padding:.8rem 1.6rem;text-decoration:none;font-family:'Jost',sans-serif;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;display:inline-block;transition:background .25s,color .25s;}
+.featured-btn:hover{background:var(--fern);color:var(--ink);}
+.rubrics-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(74,124,89,.12);margin-top:3rem;}
+.rubric-card{background:var(--paper);padding:2rem 1.6rem;transition:background .25s;}
+.rubric-card:hover{background:var(--warm);}
+.rubric-icon{font-size:1.4rem;margin-bottom:1rem;}
+.rubric-name{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--ink);margin-bottom:.6rem;}
+.rubric-desc{font-size:.82rem;line-height:1.75;color:var(--ink-light);}
+.rubric-example{margin-top:1rem;font-size:.78rem;font-style:italic;color:var(--moss);line-height:1.6;}
+.rubric-card.dark-card{background:var(--ink);}
+.rubric-card.dark-card .rubric-name{color:var(--cream);}
+.rubric-card.dark-card .rubric-desc{color:rgba(211,230,208,.65);}
+.rubric-card.dark-card .rubric-example{color:var(--fern);}
+.g-next-section{background:var(--ink);padding:2.5rem 4rem;display:flex;align-items:center;justify-content:space-between;gap:2rem;}
+.g-next-label{font-family:'Jost',sans-serif;font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(168,197,160,.45);margin-bottom:.5rem;}
+.g-next-link{display:inline-flex;align-items:center;gap:.8rem;text-decoration:none;}
+.g-next-name{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;color:var(--cream);font-style:italic;transition:color .2s;}
+.g-next-link:hover .g-next-name{color:var(--fern);}
+.g-next-arrow{font-family:'Cormorant Garamond',serif;font-size:2rem;color:rgba(110,168,126,.5);transition:transform .2s,color .2s;}
+.g-next-link:hover .g-next-arrow{transform:translateX(6px);color:var(--fern);}
+.g-next-num{font-family:'Cormorant Garamond',serif;font-size:4rem;font-weight:300;color:rgba(255,255,255,.06);line-height:1;}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .65s ease,transform .65s ease;}
+.reveal.visible{opacity:1;transform:none;}
+.d1{transition-delay:.1s;}
+.d2{transition-delay:.2s;}
+@media(max-width:800px){ .hero,.toc-bar,.content-section,.g-next-section{padding-left:1.5rem;padding-right:1.5rem;} .hero{grid-template-columns:1fr;} .hero-meta{padding-left:0;border-left:none;border-top:1px solid rgba(74,124,89,.2);padding-top:1.5rem;} .hero-mark-svg{right:1.5rem;top:9rem;width:60px;height:60px;} .article-layout,.article-layout.wide{grid-template-columns:1fr;gap:2rem;} .practices-grid,.rubrics-grid{grid-template-columns:1fr;} .featured-strip{grid-template-columns:1fr;gap:1.5rem;} }
+</style>
+
+<style>
+.sec-mat{padding:5rem 4rem 6rem;max-width:1100px;margin:0 auto;}
+.sec-mat-label{font-size:.66rem;letter-spacing:.22em;text-transform:uppercase; color:var(--moss);margin-bottom:.8rem;}
+.sec-mat h2{font-family:'Cormorant Garamond',serif;font-size:2.1rem;font-weight:300; margin-bottom:2rem;}
+.sec-mat h2 em{font-style:italic;color:var(--moss);}
+.sec-mat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr)); gap:1px;background:rgba(74,124,89,.15);border:1px solid rgba(74,124,89,.15);}
+.sec-mat-card{background:var(--paper);padding:1.4rem 1.5rem;text-decoration:none; color:inherit;display:block;transition:background .2s;}
+.sec-mat-card:hover{background:var(--warm);}
+.sec-mat-kind{font-size:.62rem;letter-spacing:.18em;text-transform:uppercase; color:var(--clay-text);margin-bottom:.6rem;}
+.sec-mat-name{font-family:'Cormorant Garamond',serif;font-size:1.18rem;line-height:1.3; color:var(--ink);margin-bottom:.5rem;}
+.sec-mat-desc{font-size:.79rem;line-height:1.65;color:var(--ink-light);}
+@media(max-width:720px){.sec-mat{padding:3rem 1.5rem 4rem;}}
+</style>
+
+<style>
+/* ECO:MANAGED — блок материалов раздела */
+.sec-mat{padding:5rem 4rem 6rem;max-width:1100px;margin:0 auto;}
+.sec-mat-label{font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--moss);margin-bottom:.8rem;}
+.sec-mat h2{font-family:'Cormorant Garamond',serif;font-size:2.1rem;font-weight:300;
+  margin-bottom:2rem;}
+.sec-mat h2 em{font-style:italic;color:var(--moss);}
+.sec-mat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));
+  gap:1px;background:rgba(74,124,89,.15);border:1px solid rgba(74,124,89,.15);}
+.sec-mat-card{background:var(--paper);padding:1.4rem 1.5rem;text-decoration:none;
+  color:inherit;display:block;transition:background .2s;}
+.sec-mat-card:hover{background:var(--warm);}
+.sec-mat-kind{font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--clay-text);margin-bottom:.6rem;}
+.sec-mat-name{font-family:'Cormorant Garamond',serif;font-size:1.18rem;line-height:1.3;
+  color:var(--ink);margin-bottom:.5rem;}
+.sec-mat-desc{font-size:.79rem;line-height:1.65;color:var(--ink-light);}
+@media(max-width:720px){.sec-mat{padding:3rem 1.5rem 4rem;}}
+</style>
+<!-- ECO:MANAGED:head -->
+  <link rel="canonical" href="https://morgunkonstantin.github.io/ecology-v2/section-health.html">
+  <meta property="og:url" content="https://morgunkonstantin.github.io/ecology-v2/section-health.html">
+  <meta property="og:site_name" content="ЭкоСознание">
+  <meta property="og:image" content="https://morgunkonstantin.github.io/ecology-v2/assets/img/health-og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Миска с зеленью и помидорами и стакан воды на деревянном столе; вокруг ростки растений и зелёные холмы.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://morgunkonstantin.github.io/ecology-v2/assets/img/health-og.jpg">
+  <meta name="theme-color" content="#faf6ef">
+  <meta name="color-scheme" content="light">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="alternate" type="application/rss+xml" title="ЭкоСознание — RSS" href="feed.xml">
+  <link rel="stylesheet" href="assets/site.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Здоровье","headline":"Здоровье","description":"Тело и планета — одна система. One Health, циркадные ритмы, экспозом и природа как медицина.","inLanguage":"ru-RU","url":"https://morgunkonstantin.github.io/ecology-v2/section-health.html","isPartOf":{"@type":"WebSite","name":"ЭкоСознание","url":"https://morgunkonstantin.github.io/ecology-v2/"},"publisher":{"@type":"Organization","name":"ЭкоСознание","url":"https://morgunkonstantin.github.io/ecology-v2/"},"image":"https://morgunkonstantin.github.io/ecology-v2/assets/img/health-og.jpg"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://morgunkonstantin.github.io/ecology-v2/"},{"@type":"ListItem","position":2,"name":"Здоровье","item":"https://morgunkonstantin.github.io/ecology-v2/section-health.html"}]}</script>
+<!-- /ECO:MANAGED:head -->
+</head>
+<body>
+<a class="skip-link" href="#content">Перейти к содержанию</a>
+
+<!-- ECO:MANAGED:nav -->
+<div class="g-nav-wrap" id="gNavWrap">
+  <div class="g-nav">
+    <a href="index.html" class="g-logo">
+      <svg viewBox="0 0 100 100" fill="none" class="logo-svg"><circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="3" stroke-dasharray="220 30" transform="rotate(-110 50 50)"/><circle cx="50" cy="50" r="7" fill="#4a7c59"/></svg>
+      <span class="g-logo-text">Эко<em>Сознание</em></span>
+    </a>
+    <ul class="g-links">
+      <li>
+        <button class="g-drop-btn" aria-expanded="false">
+          Разделы
+          <svg class="g-chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4 4-4"/></svg>
+        </button>
+        <div class="g-dropdown">
+          <a href="section-philosophy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 72 35 C 60 35, 54 49, 46 59 C 40 66, 29 67, 27 57 C 25 47, 35 38, 46 40 C 56 42, 62 56, 72 66" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="g-dd-name">Философия</span><span class="g-dd-num">01</span></a>
+          <a href="section-psychology.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="27" x2="50" y2="74" stroke-linecap="round"/><path d="M 31 33 C 31 55, 39 62, 50 62 C 61 62, 69 55, 69 33" stroke-linecap="round"/></svg></span><span class="g-dd-name">Психология</span><span class="g-dd-num">02</span></a>
+          <a href="section-lifestyle.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Стиль жизни</span><span class="g-dd-num">03</span></a>
+          <a href="section-technologies.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 73.9 42.6 L 82.3 43.4 L 82.3 56.6 L 73.9 57.4 L 72.1 61.7 L 77.5 68.2 L 68.2 77.5 L 61.7 72.1 L 57.4 73.9 L 56.6 82.3 L 43.4 82.3 L 42.6 73.9 L 38.3 72.1 L 31.8 77.5 L 22.5 68.2 L 27.9 61.7 L 26.1 57.4 L 17.7 56.6 L 17.7 43.4 L 26.1 42.6 L 27.9 38.3 L 22.5 31.8 L 31.8 22.5 L 38.3 27.9 L 42.6 26.1 L 43.4 17.7 L 56.6 17.7 L 57.4 26.1 L 61.7 27.9 L 68.2 22.5 L 77.5 31.8 L 72.1 38.3 Z" stroke-linejoin="round"/><circle cx="50" cy="50" r="9"/></svg></span><span class="g-dd-name">Технологии</span><span class="g-dd-num">04</span></a>
+          <a href="section-food.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="g-dd-name">Питание</span><span class="g-dd-num">05</span></a>
+          <a href="section-architecture.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 28 46 L 50 26 L 72 46" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="51" x2="70" y2="51" stroke-linecap="round"/><line x1="35" y1="56" x2="35" y2="69" stroke-linecap="round"/><line x1="45" y1="56" x2="45" y2="69" stroke-linecap="round"/><line x1="55" y1="56" x2="55" y2="69" stroke-linecap="round"/><line x1="65" y1="56" x2="65" y2="69" stroke-linecap="round"/><line x1="30" y1="74" x2="70" y2="74" stroke-linecap="round"/></svg></span><span class="g-dd-name">Архитектура</span><span class="g-dd-num">06</span></a>
+          <a href="section-economy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><path d="M 61 38 C 61 31, 39 30, 39 40 C 39 50, 61 50, 61 60 C 61 70, 39 69, 39 62" stroke-linecap="round"/></svg></span><span class="g-dd-name">Экономика</span><span class="g-dd-num">07</span></a>
+          <a href="section-education.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><g transform="translate(0 100) scale(1 -1)"><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></g></svg></span><span class="g-dd-name">Образование</span><span class="g-dd-num">08</span></a>
+          <a href="section-community.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="g-dd-name">Сообщество</span><span class="g-dd-num">09</span></a>
+          <a href="section-travel.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="g-dd-name">Путешествия</span><span class="g-dd-num">10</span></a>
+          <a href="section-health.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 42 27 H 58 V 42 H 73 V 58 H 58 V 73 H 42 V 58 H 27 V 42 H 42 Z" stroke-linejoin="round"/></svg></span><span class="g-dd-name">Здоровье</span><span class="g-dd-num">11</span></a>
+          <a href="section-science.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="g-dd-name">Наука</span><span class="g-dd-num">12</span></a>
+        </div>
+      </li>
+      <li><a href="about.html">О проекте</a></li>
+    </ul>
+    <button class="g-burger" id="gBurger" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</div>
+
+<div class="g-overlay" id="gOverlay">
+  <div class="g-ov-section">
+    <div class="g-ov-label">Разделы</div>
+    <div class="g-ov-grid">
+      <a href="section-philosophy.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 72 35 C 60 35, 54 49, 46 59 C 40 66, 29 67, 27 57 C 25 47, 35 38, 46 40 C 56 42, 62 56, 72 66" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="g-ov-name">Философия</span></a>
+      <a href="section-psychology.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="27" x2="50" y2="74" stroke-linecap="round"/><path d="M 31 33 C 31 55, 39 62, 50 62 C 61 62, 69 55, 69 33" stroke-linecap="round"/></svg></span><span class="g-ov-name">Психология</span></a>
+      <a href="section-lifestyle.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/></svg></span><span class="g-ov-name">Стиль жизни</span></a>
+      <a href="section-technologies.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 73.9 42.6 L 82.3 43.4 L 82.3 56.6 L 73.9 57.4 L 72.1 61.7 L 77.5 68.2 L 68.2 77.5 L 61.7 72.1 L 57.4 73.9 L 56.6 82.3 L 43.4 82.3 L 42.6 73.9 L 38.3 72.1 L 31.8 77.5 L 22.5 68.2 L 27.9 61.7 L 26.1 57.4 L 17.7 56.6 L 17.7 43.4 L 26.1 42.6 L 27.9 38.3 L 22.5 31.8 L 31.8 22.5 L 38.3 27.9 L 42.6 26.1 L 43.4 17.7 L 56.6 17.7 L 57.4 26.1 L 61.7 27.9 L 68.2 22.5 L 77.5 31.8 L 72.1 38.3 Z" stroke-linejoin="round"/><circle cx="50" cy="50" r="9"/></svg></span><span class="g-ov-name">Технологии</span></a>
+      <a href="section-food.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="g-ov-name">Питание</span></a>
+      <a href="section-architecture.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 28 46 L 50 26 L 72 46" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="51" x2="70" y2="51" stroke-linecap="round"/><line x1="35" y1="56" x2="35" y2="69" stroke-linecap="round"/><line x1="45" y1="56" x2="45" y2="69" stroke-linecap="round"/><line x1="55" y1="56" x2="55" y2="69" stroke-linecap="round"/><line x1="65" y1="56" x2="65" y2="69" stroke-linecap="round"/><line x1="30" y1="74" x2="70" y2="74" stroke-linecap="round"/></svg></span><span class="g-ov-name">Архитектура</span></a>
+      <a href="section-economy.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><path d="M 61 38 C 61 31, 39 30, 39 40 C 39 50, 61 50, 61 60 C 61 70, 39 69, 39 62" stroke-linecap="round"/></svg></span><span class="g-ov-name">Экономика</span></a>
+      <a href="section-education.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><g transform="translate(0 100) scale(1 -1)"><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></g></svg></span><span class="g-ov-name">Образование</span></a>
+      <a href="section-community.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="g-ov-name">Сообщество</span></a>
+      <a href="section-travel.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="g-ov-name">Путешествия</span></a>
+      <a href="section-health.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 42 27 H 58 V 42 H 73 V 58 H 58 V 73 H 42 V 58 H 27 V 42 H 42 Z" stroke-linejoin="round"/></svg></span><span class="g-ov-name">Здоровье</span></a>
+      <a href="section-science.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="g-ov-name">Наука</span></a>
+    </div>
+  </div>
+  <div class="g-ov-section">
+    <div class="g-ov-label">Навигация</div>
+    <div class="g-ov-simple-links">
+      <a href="index.html" class="g-ov-simple-link">Главная</a>
+      <a href="map.html" class="g-ov-simple-link">Карта связей</a>
+      <a href="contents.html" class="g-ov-simple-link">Все материалы</a>
+      <a href="revisions.html" class="g-ov-simple-link">Что не подтвердилось</a>
+      <a href="search.html" class="g-ov-simple-link">Поиск</a>
+      <a href="paths.html" class="g-ov-simple-link">Тропы чтения</a>
+      <a href="tree.html" class="g-ov-simple-link">Дерево материалов</a>
+      <a href="thinkers.html" class="g-ov-simple-link">Указатель имён</a>
+      <a href="about.html" class="g-ov-simple-link">О проекте</a>
+    </div>
+  </div>
+</div>
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<main id="content" tabindex="-1">
+<!-- ECO:MANAGED:breadcrumb -->
+<nav class="breadcrumb" aria-label="Хлебные крошки"><a href="index.html">Главная</a> <span class="bc-sep">→</span> <span class="bc-current">Здоровье</span></nav>
+<!-- /ECO:MANAGED:breadcrumb -->
+
+<figure class="hero-cover" style="--cover-x-mobile:30%;">
+  <img src="assets/img/health-hero-2000.webp"
+       srcset="assets/img/health-hero-1200.webp 1200w, assets/img/health-hero-2000.webp 2000w"
+       sizes="100vw" width="2000" height="666" fetchpriority="high" decoding="async"
+       alt="Миска с зеленью и помидорами и стакан воды на деревянном столе; вокруг ростки растений и зелёные холмы.">
+</figure>
+
+<section class="hero" id="top">
+  <div>
+    <div class="hero-tag">Раздел · Здоровье</div>
+    <h1>Тело и планета&nbsp;—<br><em>одна система</em></h1>
+    <p class="hero-lead">Здоровье человека невозможно отделить от здоровья экосистем. Мы дышим воздухом, циркулирующим через атмосферу. Пьём воду, прошедшую через ландшафт. Живём с микробиомом, формируемым средой. Раздел о теле как узле в большой системе.</p>
+  </div>
+  <div class="hero-meta">
+    <div><div class="meta-label">Ключевые понятия</div><div class="meta-value">One Health · Циркадные ритмы · Экспозом · Микробиом · Природа как медицина</div></div>
+    <div><div class="meta-label">Ключевые мыслители</div><div class="meta-value">Эндрю Хуберман · Рэйчел Карсон · Гленн Альбрехт · Джеффри Холл</div></div>
+    <div><div class="meta-label">Рубрики</div><div class="meta-value">Симптом среды · Практика · Наука связи</div></div>
+  </div>
+</section>
+<div class="toc-bar">
+  <a href="#question" class="active">Главный вопрос</a>
+  <a href="#onehealth">One Health</a>
+  <a href="#circadian">Ритмы</a>
+  <a href="#nature">Природа лечит</a>
+  <a href="#honest">Честный взгляд</a>
+  <a href="#rubrics">Рубрики</a>
+</div>
+
+<section class="content-section" id="question">
+  <div class="section-label"><span class="section-label-num">01</span><span class="section-label-line"></span><span class="section-label-tag">Главный вопрос</span></div>
+  <div class="article-layout wide reveal">
+    <div class="article-body">
+      <h2>Здоровье начинается<br><em>за пределами тела</em></h2>
+      <p>Современная медицина блестяще лечит острое. При хронических болезнях, тревоге, нарушениях сна — теряется. Уровень кортизола зависит от шума в районе. Состав микробиома — от среды жизни. Циркадные ритмы — от света. Иммунитет — от воздуха, воды, почвы.</p>
+      <div class="pull-quote"><p>«Здоровье — это не свойство тела. Это свойство отношений между телом и средой»</p></div>
+    </div>
+    <div class="reveal d1">
+      <div class="practices-grid">
+        <div class="practice-card"><div class="practice-num">01</div><div class="practice-name">Изоляция от <em>света</em></div><div class="practice-desc">90% времени в помещении. Циркадные ритмы сбиты. Депрессия, нарушения сна — прямые следствия.</div></div>
+        <div class="practice-card"><div class="practice-num">02</div><div class="practice-name">Хронический <em>стресс</em></div><div class="practice-desc">Кортизол остаётся высоким сутками. Иммунная система и сосуды страдают одинаково.</div></div>
+        <div class="practice-card"><div class="practice-num">03</div><div class="practice-name">Социальная <em>изоляция</em></div><div class="practice-desc">Одиночество вызывает эффекты, сопоставимые с курением 15 сигарет в день (Holt-Lunstad).</div></div>
+        <div class="practice-card"><div class="practice-num">04</div><div class="practice-name">Хемикальный <em>экспозом</em></div><div class="practice-desc">Средний человек несёт в крови следы 80–100 синтетических соединений, неизвестных его дедушке.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="content-section alt" id="onehealth">
+  <div class="section-label"><span class="section-label-num">02</span><span class="section-label-line"></span><span class="section-label-tag">One Health</span></div>
+  <div class="article-layout wide reveal">
+    <div class="article-body">
+      <h2>Один мир —<br><em>одно здоровье</em></h2>
+      <p>Манхэттенские принципы 2004 года: невозможно отдельно решать вопросы здоровья людей, животных и экосистем. 75% новых инфекционных заболеваний зоонозного происхождения. ВИЧ, SARS, COVID-19 — все пришли от животных. Здоровье леса определяет здоровье человека через цепочки, которые мы редко прослеживаем.</p>
+    </div>
+    <div class="reveal d1">
+      <div class="practices-grid">
+        <div class="practice-card"><div class="practice-num">Люди</div><div class="practice-name">Здоровье <em>людей</em></div><div class="practice-desc">Инфекции, хронические болезни, психическое здоровье — всё связано с состоянием экосистем.</div></div>
+        <div class="practice-card"><div class="practice-num">Животные</div><div class="practice-name">Здоровье <em>животных</em></div><div class="practice-desc">Зоонозы. 75% новых болезней — от животных. Индустриальное животноводство — инкубатор патогенов.</div></div>
+        <div class="practice-card"><div class="practice-num">Экосистемы</div><div class="practice-name">Здоровье <em>экосистем</em></div><div class="practice-desc">Чистая вода, стабильный климат, биоразнообразие — основа для двух предыдущих.</div></div>
+        <div class="practice-card"><div class="practice-num">Связь</div><div class="practice-name">Всё <em>неразделимо</em></div><div class="practice-desc">Уничтожение мангровых лесов → вспышки малярии. Восстановление леса → чистая вода → здоровье.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="content-section" id="circadian">
+  <div class="section-label"><span class="section-label-num">03</span><span class="section-label-line"></span><span class="section-label-tag">Циркадные ритмы</span></div>
+  <div class="article-layout wide reveal">
+    <div class="article-body">
+      <h2>Тело знает время —<br><em>лучше, чем мы</em></h2>
+      <p>Нобелевская премия 2017 — Холл, Розбаш, Янг: молекулярные механизмы циркадных ритмов. Каждая клетка тела имеет внутренние часы, синхронизируемые светом. Современный человек просыпается в тёмной комнате, видит экран, весь день проводит при 300–500 люкс. Природный утренний свет — 10 000–50 000 люкс. Разница в 100 раз.</p>
+    </div>
+    <div class="reveal d1">
+      <div class="featured-strip"><a class="block-bg" href="essay-morning-light.html" tabindex="-1" aria-hidden="true"><img src="assets/img/morning-light-hero-1200.webp" srcset="assets/img/morning-light-hero-1200.webp 1200w, assets/img/morning-light-hero-2000.webp 2000w" sizes="(max-width: 900px) 100vw, 1320px" alt="" loading="lazy" decoding="async"></a>
+        <div>
+          <div class="featured-label">Эссе рубрики «Практика» · 14 мин</div>
+          <h3>Утренний свет: десять минут, которые меняют весь день</h3>
+          <p>От нобелевской хронобиологии до конкретного протокола. Почему утренний выход без солнечных очков задаёт работу гормонов до позднего вечера.</p>
+        </div>
+        <a href="essay-morning-light.html" class="featured-btn">Читать →</a>
+      </div>
+    </div>
+  <div class="featured-strip reveal d1" style="margin-top:1.5rem;background:rgba(74,124,89,.92);"><a class="block-bg" href="essay-planetary-health.html" tabindex="-1" aria-hidden="true"><img src="assets/img/planetary-health-hero-1200.webp" srcset="assets/img/planetary-health-hero-1200.webp 1200w, assets/img/planetary-health-hero-2000.webp 2000w" sizes="(max-width: 900px) 100vw, 1320px" alt="" loading="lazy" decoding="async"></a>
+    <div>
+      <div class="featured-label" style="color:rgba(243,237,227,.7);">Эссе раздела · 17 мин</div>
+      <h3>Здоровье человека — это здоровье планеты, прочитанное изнутри</h3>
+      <p>One Health, экспозом, микробиом, <a class="term" href="glossary.html#planetarnye-granicy">планетарные границы</a>. Программное эссе о биологическом факте, переворачивающем медицинскую логику XXI века.</p>
+    </div>
+    <a href="essay-planetary-health.html" class="featured-btn" style="border-color:rgba(243,237,227,.4);color:var(--cream);">Читать →</a>
+  </div>
+  </div>
+</section>
+
+<section class="content-section alt" id="nature">
+  <div class="section-label"><span class="section-label-num">04</span><span class="section-label-line"></span><span class="section-label-tag">Природа как медицина</span></div>
+  <div class="article-layout wide reveal">
+    <div class="article-body">
+      <h2>Лекарство, которое<br>не нужно<br><em>прописывать</em></h2>
+      <p>В Шотландии с 2018 года врачи официально прописывают «прогулки в природе» при тревоге и гипертонии. В Японии государственная программа сертификации лесов для синрин-йоку. 120 минут в природе в неделю — порог статистически значимого улучшения благополучия (White et al., 20 000 человек, UK).</p>
+    </div>
+    <div class="reveal d1">
+      <div class="practices-grid">
+        <div class="practice-card"><div class="practice-num">−12,4%</div><div class="practice-name">снижение <em>кортизола</em></div><div class="practice-desc">После 2 часов в лесу. Эффект сохраняется до 24 часов. (Park et al., 24 леса Японии)</div></div>
+        <div class="practice-card"><div class="practice-num">+50%</div><div class="practice-name">NK-клетки <em>иммунитета</em></div><div class="practice-desc">Три дня в лесу дают эффект до недели. (Li et al., Nippon Medical School)</div></div>
+        <div class="practice-card"><div class="practice-num">120 мин</div><div class="practice-name">порог в <em>неделю</em></div><div class="practice-desc">Минимум в природной среде для статистически значимого улучшения. (White et al., UK)</div></div>
+        <div class="practice-card"><div class="practice-num">+3 года</div><div class="practice-name">прирост <em>жизни</em></div><div class="practice-desc">У людей, живущих в зелёных районах. (Crouse et al., Lancet Planetary Health)</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="content-section" id="honest">
+  <div class="section-label"><span class="section-label-num">05</span><span class="section-label-line"></span><span class="section-label-tag">Честный взгляд</span></div>
+  <div class="article-layout wide reveal">
+    <div class="article-body">
+      <h2>Где «природное здоровье» <em>обманывает</em></h2>
+      <p>«Натуральное» ≠ безопасное. Wellness-индустрия — $5,6 трлн без регуляции и доказательной базы. Классовое измерение: «прогулки в лесу» доступны не всем. Антипрививочное как «возврат к природе» — опасное смешение. Экологический подход дополняет медицину, не заменяет.</p>
+    </div>
+    <div class="reveal d1">
+      <div class="practices-grid">
+        <div class="practice-card"><div class="practice-num">01</div><div class="practice-name">Утренний <em>выход</em></div><div class="practice-desc">10–15 минут без солнечных очков в первый час после пробуждения. Запускает циркадные часы.</div></div>
+        <div class="practice-card"><div class="practice-num">02</div><div class="practice-name">Два часа <em>в неделю</em></div><div class="practice-desc">Минимальный порог, после которого статистически значимо улучшаются показатели благополучия.</div></div>
+        <div class="practice-card"><div class="practice-num">03</div><div class="practice-name">Ходьба, <em>не тренировка</em></div><div class="practice-desc">10 000 шагов в день — хорошо обоснованный порог. Простая ходьба лучше кратких интенсивных тренировок.</div></div>
+        <div class="practice-card"><div class="practice-num">04</div><div class="practice-name">20 минут <em>тишины</em></div><div class="practice-desc">Городской шум — хронический стресс. Тишина или природные звуки снижают кортизол, восстанавливают внимание.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="content-section alt" id="rubrics">
+  <div class="section-label"><span class="section-label-num">06</span><span class="section-label-line"></span><span class="section-label-tag">Рубрики раздела</span></div>
+  <h2 class="reveal">Форматы <em>материалов</em></h2>
+  <div class="rubrics-grid reveal d1">
+    <div class="rubric-card"><div class="rubric-icon">⚕</div><div class="rubric-name">Симптом среды</div><div class="rubric-desc">Как конкретный фактор среды проявляется в теле. Прямая физиологическая связь.</div><div class="rubric-example">→ «Шум: как звуки города меняют сердечный ритм»</div></div>
+    <div class="rubric-card dark-card"><div class="rubric-icon">⌖</div><div class="rubric-name">Практика</div><div class="rubric-desc">Одна конкретная практика с физиологическим основанием.</div><div class="rubric-example">→ «Утренний свет: десять минут, которые меняют весь день»</div></div>
+    <div class="rubric-card"><div class="rubric-icon">∞</div><div class="rubric-name">Наука связи</div><div class="rubric-desc">Механизмы, через которые среда влияет на тело. Микробиом, циркадные системы.</div><div class="rubric-example">→ «Микробиом и почва: как бактерии в кишечнике связаны с лесом»</div></div>
+  </div>
+</section>
+
+<div class="g-next-section"><div><div class="g-next-label">Следующий раздел</div><a href="index.html" class="g-next-link"><span class="g-next-name">К карте разделов</span><span class="g-next-arrow">→</span></a></div><span class="g-next-num">↑</span></div>
+
+<section class="content-section">
+  <div style="max-width:820px;">
+    <div class="featured-strip"><a class="block-bg" href="essay-forest-medicine.html" tabindex="-1" aria-hidden="true"><img src="assets/img/forest-medicine-hero-1200.webp" srcset="assets/img/forest-medicine-hero-1200.webp 1200w, assets/img/forest-medicine-hero-2000.webp 2000w" sizes="(max-width: 900px) 100vw, 1320px" alt="" loading="lazy" decoding="async"></a>
+      <div>
+        <div class="featured-label" style="color:rgba(243,237,227,.7);">Эссе рубрики «Практика» · 9 мин</div>
+        <h3>Лес как лекарство: целительная сила природы</h3>
+        <p>Средство, которое снижает давление и стресс, укрепляет иммунитет и ускоряет выздоровление — бесплатное и без побочных эффектов. Что показывают исследования, что такое «лесные ванны» и сколько природы нужно в неделю.</p>
+      </div>
+      <a href="essay-forest-medicine.html" class="featured-btn">Читать →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ECO:MANAGED:seclist -->
+<section class="sec-mat">
+  <div class="sec-mat-label">Материалы раздела</div>
+  <h2>Читать <em>по теме</em></h2>
+  <div class="sec-mat-grid">
+    <a class="sec-mat-card" href="essay-forest-medicine.html"><img class="card-thumb" src="assets/img/forest-medicine-thumb.webp" width="640" height="360" alt="" loading="lazy" decoding="async">
+      <div class="sec-mat-kind">Эссе</div>
+      <div class="sec-mat-name">Лес как лекарство: целительная сила природы</div>
+      <div class="sec-mat-desc">Контакт с природой лечит измеримо: ниже давление и кортизол, меньше тревоги и депрессии, выше иммунитет, быстрее выздоровление…</div>
+    </a>
+    <a class="sec-mat-card" href="essay-morning-light.html"><img class="card-thumb" src="assets/img/morning-light-thumb.webp" width="640" height="360" alt="" loading="lazy" decoding="async">
+      <div class="sec-mat-kind">Эссе</div>
+      <div class="sec-mat-name">Утренний свет: десять минут</div>
+      <div class="sec-mat-desc">Циркадные ритмы и утренний солнечный свет. От нобелевской хронобиологии до конкретного протокола.</div>
+    </a>
+    <a class="sec-mat-card" href="essay-planetary-health.html"><img class="card-thumb" src="assets/img/planetary-health-thumb.webp" width="640" height="360" alt="" loading="lazy" decoding="async">
+      <div class="sec-mat-kind">Эссе</div>
+      <div class="sec-mat-name">Здоровье человека — это здоровье планеты</div>
+      <div class="sec-mat-desc">One Health, экспозом, микробиом, планетарные границы. Программное эссе о том, как здоровье человека связано со здоровьем планеты.</div>
+    </a>
+  </div>
+</section>
+<!-- /ECO:MANAGED:seclist -->
+</main>
+
+<!-- ECO:MANAGED:footer -->
+<footer class="gf">
+  <div class="gf-top">
+    <div class="gf-brand">
+      <a href="index.html" class="gf-logo">
+        <svg viewBox="0 0 100 100" fill="none" class="logo-svg" style="width:24px;height:24px;flex-shrink:0;"><circle cx="50" cy="50" r="40" stroke="#f3ede3" stroke-width="3" stroke-dasharray="220 30" transform="rotate(-110 50 50)"/><circle cx="50" cy="50" r="7" fill="#6ea87e"/></svg>
+        <span class="gf-logo-text">Эко<em>Сознание</em></span>
+      </a>
+      <p class="gf-tagline">Экологический взгляд как линза для любой сферы жизни</p>
+    </div>
+    <div class="gf-cols">
+      <div>
+        <div class="gf-col-title">Разделы</div>
+        <div class="gf-sections">
+          <a href="section-philosophy.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 72 35 C 60 35, 54 49, 46 59 C 40 66, 29 67, 27 57 C 25 47, 35 38, 46 40 C 56 42, 62 56, 72 66" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="gf-sec-name">Философия</span></a>
+          <a href="section-psychology.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="27" x2="50" y2="74" stroke-linecap="round"/><path d="M 31 33 C 31 55, 39 62, 50 62 C 61 62, 69 55, 69 33" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Психология</span></a>
+          <a href="section-lifestyle.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Стиль жизни</span></a>
+          <a href="section-technologies.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 73.9 42.6 L 82.3 43.4 L 82.3 56.6 L 73.9 57.4 L 72.1 61.7 L 77.5 68.2 L 68.2 77.5 L 61.7 72.1 L 57.4 73.9 L 56.6 82.3 L 43.4 82.3 L 42.6 73.9 L 38.3 72.1 L 31.8 77.5 L 22.5 68.2 L 27.9 61.7 L 26.1 57.4 L 17.7 56.6 L 17.7 43.4 L 26.1 42.6 L 27.9 38.3 L 22.5 31.8 L 31.8 22.5 L 38.3 27.9 L 42.6 26.1 L 43.4 17.7 L 56.6 17.7 L 57.4 26.1 L 61.7 27.9 L 68.2 22.5 L 77.5 31.8 L 72.1 38.3 Z" stroke-linejoin="round"/><circle cx="50" cy="50" r="9"/></svg></span><span class="gf-sec-name">Технологии</span></a>
+          <a href="section-food.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Питание</span></a>
+          <a href="section-architecture.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 28 46 L 50 26 L 72 46" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="51" x2="70" y2="51" stroke-linecap="round"/><line x1="35" y1="56" x2="35" y2="69" stroke-linecap="round"/><line x1="45" y1="56" x2="45" y2="69" stroke-linecap="round"/><line x1="55" y1="56" x2="55" y2="69" stroke-linecap="round"/><line x1="65" y1="56" x2="65" y2="69" stroke-linecap="round"/><line x1="30" y1="74" x2="70" y2="74" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Архитектура</span></a>
+          <a href="section-economy.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><path d="M 61 38 C 61 31, 39 30, 39 40 C 39 50, 61 50, 61 60 C 61 70, 39 69, 39 62" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Экономика</span></a>
+          <a href="section-education.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><g transform="translate(0 100) scale(1 -1)"><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></g></svg></span><span class="gf-sec-name">Образование</span></a>
+          <a href="section-community.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Сообщество</span></a>
+          <a href="section-travel.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="gf-sec-name">Путешествия</span></a>
+          <a href="section-health.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 42 27 H 58 V 42 H 73 V 58 H 58 V 73 H 42 V 58 H 27 V 42 H 42 Z" stroke-linejoin="round"/></svg></span><span class="gf-sec-name">Здоровье</span></a>
+          <a href="section-science.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="gf-sec-name">Наука</span></a>
+        </div>
+      </div>
+      <div>
+        <div class="gf-col-title">Навигация</div>
+        <nav class="gf-nav-links">
+          <a href="index.html" class="gf-nav-link">Главная</a>
+          <a href="map.html" class="gf-nav-link">Карта связей</a>
+          <a href="paths.html" class="gf-nav-link">Тропы чтения</a>
+          <a href="tree.html" class="gf-nav-link">Дерево материалов</a>
+          <a href="revisions.html" class="gf-nav-link">Что не подтвердилось</a>
+          <a href="thinkers.html" class="gf-nav-link">Указатель имён</a>
+          <a href="search.html" class="gf-nav-link">Поиск</a>
+          <a href="method.html" class="gf-nav-link">Как устроены материалы</a>
+            <a href="about.html" class="gf-nav-link">О проекте</a>
+          <a href="glossary.html" class="gf-nav-link">Глоссарий</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="gf-bottom">
+    <span class="gf-copy">© 2026 ЭкоСознание</span>
+    <div class="gf-bottom-links">
+      <a href="about.html">О проекте</a>
+      <a href="glossary.html">Глоссарий</a>
+    </div>
+  </div>
+</footer>
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+
+
+<!-- ECO:MANAGED:js -->
+<script src="assets/global.js" defer></script>
+<!-- /ECO:MANAGED:js -->
+</body>
+</html>

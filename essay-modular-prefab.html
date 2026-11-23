@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+<head>
+<script>document.documentElement.classList.replace('no-js','js');</script>
+<meta charset="UTF-8">
+<meta name="description" content="Модульный и префаб-дом — сборка в цеху вместо стройки на площадке: панели или объёмные модули, точность и сухость, герметичность пассивного уровня, монтаж за часы. Чем префаб отличается от модульного, почему завод учится от дома к дому, история от каталожных домов Sears до премиального префаба, и честные ограничения — транспорт, габариты, замороженный проект. Детальная страница каталога технологий строительства.">
+<meta property="og:title" content="Модульный и префаб-дом: точность цеха вместо площадки — ЭкоСознание">
+<meta property="og:description" content="Стройку переносят с мокрой площадки в цех: точность изделия, герметичность, монтаж за часы, дом, который учится от предыдущего — и плата дорогами и габаритами.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Модульный и префаб-дом: точность цеха вместо площадки — ЭкоСознание</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/base.css">
+<style>
+.hero{padding:10rem 4rem 5rem;display:grid;grid-template-columns:1fr 380px;gap:4rem;align-items:end;border-bottom:1px solid rgba(74,124,89,.15);position:relative;overflow:hidden;}
+.hero-mark-svg{position:absolute;right:4rem;top:11rem;width:90px;height:90px;color:rgba(74,124,89,.18);pointer-events:none;}
+.hero-mark-svg svg{width:100%;height:100%;display:block;}
+.hero-tag{display:inline-flex;align-items:center;gap:.6rem;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--moss);margin-bottom:1.5rem;}
+.hero-tag::before{content:'';display:block;width:24px;height:1px;background:var(--fern);}
+h1{font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,6vw,5rem);font-weight:300;line-height:1.05;color:var(--ink);margin-bottom:1.8rem;}
+h1 em{font-style:italic;color:var(--moss);display:block;}
+.hero-lead{font-size:1rem;line-height:1.85;color:var(--ink-light);max-width:580px;}
+.hero-meta{display:flex;flex-direction:column;gap:1.5rem;padding-left:2rem;border-left:1px solid rgba(74,124,89,.2);}
+.meta-label{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sage);margin-bottom:.4rem;}
+.meta-value{font-size:.9rem;color:var(--ink-light);line-height:1.6;}
+.toc-bar{background:var(--ink);padding:0 4rem;display:flex;align-items:stretch;overflow-x:auto;}
+.toc-bar a{color:rgba(211,230,208,.6);text-decoration:none;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;padding:1rem 1.5rem;border-right:1px solid rgba(255,255,255,.06);white-space:nowrap;transition:color .2s,background .2s;}
+.toc-bar a:hover{color:var(--mist);}
+.toc-bar a.active{color:var(--fern);}
+.content-section{padding:5rem 4rem;border-bottom:1px solid rgba(74,124,89,.1);}
+.content-section.alt{background:var(--cream);}
+.content-section.dark{background:var(--ink);}
+.section-label{display:flex;align-items:center;gap:1rem;margin-bottom:3rem;}
+.section-label-num{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--sage);}
+.section-label-line{flex:1;height:1px;background:rgba(74,124,89,.15);}
+.section-label-tag{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--moss);}
+h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:300;color:var(--ink);line-height:1.15;margin-bottom:1.5rem;}
+h2 em{font-style:italic;color:var(--moss);}
+h2.light{color:var(--cream);}
+h2.light em{color:var(--fern);}
+.article-layout{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;}
+.article-layout.wide{grid-template-columns:3fr 2fr;}
+.article-body p{font-size:.95rem;line-height:1.9;color:var(--ink-light);margin-bottom:1.1rem;}
+.article-body p:last-child{margin-bottom:0;}
+.article-body p.light{color:rgba(211,230,208,.72);}
+.pull-quote{border-left:3px solid var(--moss);padding:1.2rem 1.5rem;margin:2rem 0;background:rgba(74,124,89,.05);}
+.pull-quote p{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-style:italic;color:var(--ink);line-height:1.5;margin:0!important;}
+.pull-quote.light{background:rgba(255,255,255,.06);border-color:var(--fern);}
+.pull-quote.light p{color:var(--cream);}
+.pull-quote cite{display:block;margin-top:.6rem!important;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--sage);font-style:normal;}
+.practices-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(74,124,89,.12);margin-top:2rem;}
+.practice-card{background:var(--paper);padding:2rem 1.8rem;transition:background .25s;}
+.content-section.alt .practice-card{background:var(--cream);}
+.practice-card:hover{background:var(--warm);}
+.practice-num{font-family:'Cormorant Garamond',serif;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--clay);margin-bottom:.6rem;}
+.practice-name{font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--ink);margin-bottom:.6rem;}
+.practice-name em{font-style:italic;color:var(--moss);}
+.practice-desc{font-size:.85rem;line-height:1.75;color:var(--ink-light);}
+.featured-strip{background:var(--ink);padding:3rem 3.5rem;display:grid;grid-template-columns:1fr auto;gap:3rem;align-items:center;margin-top:3rem;}
+.featured-label{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--sage);margin-bottom:1rem;}
+.featured-strip h3{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;font-style:italic;color:var(--cream);margin-bottom:.8rem;line-height:1.2;}
+.featured-strip p{font-size:.87rem;line-height:1.8;color:rgba(211,230,208,.68);}
+.featured-btn{background:transparent;color:var(--fern);border:1px solid rgba(110,168,126,.4);padding:.8rem 1.6rem;text-decoration:none;font-family:'Jost',sans-serif;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;display:inline-block;transition:background .25s,color .25s;}
+.featured-btn:hover{background:var(--fern);color:var(--ink);}
+.rubrics-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(74,124,89,.12);margin-top:3rem;}
+.rubric-card{background:var(--paper);padding:2rem 1.6rem;transition:background .25s;}
+.rubric-card:hover{background:var(--warm);}
+.rubric-icon{font-size:1.4rem;margin-bottom:1rem;}
+.rubric-name{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--ink);margin-bottom:.6rem;}
+.rubric-desc{font-size:.82rem;line-height:1.75;color:var(--ink-light);}
+.rubric-example{margin-top:1rem;font-size:.78rem;font-style:italic;color:var(--moss);line-height:1.6;}
+.rubric-card.dark-card{background:var(--ink);}
+.rubric-card.dark-card .rubric-name{color:var(--cream);}
+.rubric-card.dark-card .rubric-desc{color:rgba(211,230,208,.65);}
+.rubric-card.dark-card .rubric-example{color:var(--fern);}
+.g-next-section{background:var(--ink);padding:2.5rem 4rem;display:flex;align-items:center;justify-content:space-between;gap:2rem;}
+.g-next-label{font-family:'Jost',sans-serif;font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(168,197,160,.45);margin-bottom:.5rem;}
+.g-next-link{display:inline-flex;align-items:center;gap:.8rem;text-decoration:none;}
+.g-next-name{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;color:var(--cream);font-style:italic;transition:color .2s;}
+.g-next-link:hover .g-next-name{color:var(--fern);}
+.g-next-arrow{font-family:'Cormorant Garamond',serif;font-size:2rem;color:rgba(110,168,126,.5);transition:transform .2s,color .2s;}
+.g-next-link:hover .g-next-arrow{transform:translateX(6px);color:var(--fern);}
+.g-next-num{font-family:'Cormorant Garamond',serif;font-size:4rem;font-weight:300;color:rgba(255,255,255,.06);line-height:1;}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .65s ease,transform .65s ease;}
+.reveal.visible{opacity:1;transform:none;}
+.d1{transition-delay:.1s;}
+.d2{transition-delay:.2s;}
+@media(max-width:800px){ .hero,.toc-bar,.content-section,.g-next-section{padding-left:1.5rem;padding-right:1.5rem;} .hero{grid-template-columns:1fr;} .hero-meta{padding-left:0;border-left:none;border-top:1px solid rgba(74,124,89,.2);padding-top:1.5rem;} .hero-mark-svg{right:1.5rem;top:9rem;width:60px;height:60px;} .article-layout,.article-layout.wide{grid-template-columns:1fr;gap:2rem;} .practices-grid,.rubrics-grid{grid-template-columns:1fr;} .featured-strip{grid-template-columns:1fr;gap:1.5rem;} }
+.methods-table{margin:2rem 0;border:1px solid rgba(74,124,89,.15);overflow-x:auto;}
+.methods-row{display:grid;grid-template-columns:180px repeat(4,1fr);gap:0;border-bottom:1px solid rgba(74,124,89,.1);min-width:760px;}
+.methods-row:last-child{border-bottom:none;}
+.methods-row.header{background:var(--ink);}
+.methods-row.header > div{color:var(--sage);font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;padding:.9rem 1rem;}
+.methods-row > div{background:var(--paper);padding:.95rem 1rem;font-size:.85rem;color:var(--ink-light);line-height:1.5;border-right:1px solid rgba(74,124,89,.08);}
+.content-section.alt .methods-row > div{background:var(--cream);}
+.methods-row > div:last-child{border-right:none;}
+.methods-row > .method-name{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1rem;color:var(--ink);}
+.methods-row.header > .method-name{color:var(--sage);font-style:normal;}
+.seasons-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(74,124,89,.12);margin:2rem 0;}
+.season-card{background:var(--paper);padding:1.8rem 1.5rem;transition:background .25s;display:flex;flex-direction:column;}
+.content-section.alt .season-card{background:var(--cream);}
+.season-card:hover{background:var(--warm);}
+.season-icon{font-size:1.9rem;margin-bottom:.7rem;line-height:1;}
+.season-name{font-family:'Cormorant Garamond',serif;font-size:1.35rem;color:var(--ink);margin-bottom:.2rem;}
+.season-name em{font-style:italic;color:var(--moss);}
+.season-months{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--clay);margin-bottom:.9rem;}
+.season-actions{font-size:.83rem;line-height:1.7;color:var(--ink-light);margin-bottom:.8rem;}
+.season-watch{font-size:.78rem;line-height:1.6;color:var(--ink-light);padding-top:.7rem;border-top:1px dashed rgba(74,124,89,.18);margin-top:auto;}
+.season-watch strong{color:var(--rust);font-weight:400;}
+.timeline{margin:2rem 0;position:relative;border-left:1px solid rgba(74,124,89,.2);padding-left:2rem;}
+.timeline-item{margin-bottom:2rem;position:relative;}
+.timeline-item:last-child{margin-bottom:0;}
+.timeline-item::before{content:'';position:absolute;left:-2.45rem;top:.3rem;width:9px;height:9px;border-radius:50%;background:var(--moss);box-shadow:0 0 0 3px var(--paper);}
+.content-section.alt .timeline-item::before{box-shadow:0 0 0 3px var(--cream);}
+.timeline-era{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--clay);margin-bottom:.4rem;}
+.timeline-name{font-family:'Cormorant Garamond',serif;font-size:1.25rem;color:var(--ink);margin-bottom:.5rem;line-height:1.3;}
+.timeline-name em{font-style:italic;color:var(--moss);}
+.timeline-desc{font-size:.88rem;line-height:1.75;color:var(--ink-light);}
+.timeline-desc em{font-style:italic;color:var(--moss);}
+.case-block{background:var(--ink);padding:4rem 3.5rem;margin:2rem 0;}
+.case-inner{max-width:920px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:start;}
+.case-block h3{font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:300;color:var(--cream);line-height:1.25;margin-bottom:1.3rem;}
+.case-block h3 em{font-style:italic;color:var(--fern);}
+.case-block p{font-family:'Cormorant Garamond',serif;font-size:1.05rem;line-height:1.75;color:rgba(211,230,208,.75);margin-bottom:1rem;}
+.case-stats{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,.08);}
+.case-stat{background:rgba(255,255,255,.04);padding:1.4rem 1.2rem;text-align:center;}
+.case-stat-num{font-family:'Cormorant Garamond',serif;font-size:2rem;color:var(--fern);font-weight:300;line-height:1;margin-bottom:.4rem;}
+.case-stat-lbl{font-size:.72rem;color:rgba(211,230,208,.65);line-height:1.5;}
+.case-link{display:inline-flex;align-items:center;gap:.6rem;font-family:'Jost',sans-serif;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--fern);text-decoration:none;border-bottom:1px solid rgba(110,168,126,.4);padding-bottom:.3rem;margin-top:1rem;}
+.case-link:hover{border-color:var(--fern);}
+@media(max-width:800px){ .case-inner{grid-template-columns:1fr;gap:2rem;} .case-block{padding:2.5rem 1.5rem;} .seasons-grid{grid-template-columns:1fr 1fr;} .methods-row{grid-template-columns:140px repeat(4,1fr);min-width:660px;} }
+@media(max-width:540px){ .seasons-grid{grid-template-columns:1fr;} .case-stats{grid-template-columns:1fr 1fr;} }
+.cycle-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(74,124,89,.12);margin:2rem 0;}
+.cycle-card{background:var(--paper);padding:1.8rem 1.6rem;text-align:center;transition:background .25s;}
+.content-section.alt .cycle-card{background:var(--cream);}
+.cycle-card:hover{background:var(--warm);}
+.cycle-step{font-family:'Cormorant Garamond',serif;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--clay);margin-bottom:.6rem;}
+.cycle-icon{font-size:2rem;margin-bottom:.8rem;line-height:1;}
+.cycle-name{font-family:'Cormorant Garamond',serif;font-size:1.15rem;color:var(--ink);margin-bottom:.5rem;}
+.cycle-name em{font-style:italic;color:var(--moss);}
+.cycle-desc{font-size:.82rem;line-height:1.7;color:var(--ink-light);}
+.can-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin:2rem 0;}
+.can-col h4{font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:400;margin-bottom:1rem;}
+.can-col.yes h4{color:var(--moss);}
+.can-col.no h4{color:var(--rust);}
+.can-list{list-style:none;display:flex;flex-direction:column;gap:0;}
+.can-item{font-size:.85rem;line-height:1.6;color:var(--ink-light);padding:.45rem 0;border-bottom:1px dashed rgba(74,124,89,.12);}
+.can-item:last-child{border-bottom:none;}
+.can-item::before{margin-right:.5rem;}
+.can-col.yes .can-item::before{content:'✓';color:var(--fern);}
+.can-col.no .can-item::before{content:'✗';color:var(--rust);}
+.soil-block{background:var(--ink);padding:4rem 3.5rem;margin:3rem 0;}
+.soil-inner{max-width:720px;margin:0 auto;}
+.soil-block h3{font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:300;font-style:italic;color:var(--cream);line-height:1.3;margin-bottom:1.5rem;}
+.soil-block h3 em{color:var(--fern);}
+.soil-block p{font-family:'Cormorant Garamond',serif;font-size:1.05rem;line-height:1.8;color:rgba(211,230,208,.75);margin-bottom:1.2rem;}
+.soil-block p:last-child{margin-bottom:0;}
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(74,124,89,.15);margin:2rem 0;}
+.stat-card{background:var(--paper);padding:1.6rem 1.2rem;text-align:center;}
+.content-section.alt .stat-card{background:var(--cream);}
+.stat-num{font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:300;color:var(--moss);line-height:1;margin-bottom:.4rem;}
+.stat-label{font-size:.78rem;line-height:1.5;color:var(--ink-light);}
+.q-list{display:flex;flex-direction:column;gap:0;margin:1.5rem 0;}
+.q-item{padding:1.2rem 0;border-bottom:1px solid rgba(74,124,89,.1);}
+.q-item:last-child{border-bottom:none;}
+.q-question{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--ink);margin-bottom:.5rem;font-weight:400;}
+.q-question em{font-style:italic;color:var(--moss);}
+.q-answer{font-size:.88rem;line-height:1.75;color:var(--ink-light);}
+@media(max-width:800px){ .cycle-grid{grid-template-columns:1fr 1fr;} .can-grid{grid-template-columns:1fr;} .stats-row{grid-template-columns:1fr 1fr;} .soil-block{padding:2.5rem 1.5rem;} }
+@media(max-width:540px){ .cycle-grid{grid-template-columns:1fr;} .stats-row{grid-template-columns:1fr 1fr;} }
+.section-num{font-family:'Cormorant Garamond',serif;font-size:0.85rem;letter-spacing:0.3em;color:var(--moss);margin-bottom:1rem;font-style:italic;}
+.disc-meta{font-family:'Jost',sans-serif;font-size:0.78rem;letter-spacing:0.05em;color:var(--ink-light);margin-bottom:1.5rem;padding-bottom:1rem;border-bottom:1px solid rgba(74,124,89,0.15);font-weight:300;line-height:1.7;}
+.content-section p{font-size:1rem;line-height:1.85;color:var(--ink);margin-top:1.2rem;}
+.content-section p strong{color:var(--moss);font-weight:500;}
+.content-section p em{font-style:italic;color:var(--ink-light);}
+.content-section h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3rem);font-weight:300;line-height:1.15;color:var(--ink);margin-bottom:0.5rem;}
+.content-section h2 em{color:var(--moss);font-style:italic;display:block;}
+</style>
+<!-- ECO:MANAGED:head -->
+  <link rel="canonical" href="https://morgunkonstantin.github.io/ecology-v2/essay-modular-prefab.html">
+  <meta property="og:url" content="https://morgunkonstantin.github.io/ecology-v2/essay-modular-prefab.html">
+  <meta property="og:site_name" content="ЭкоСознание">
+  <meta property="og:image" content="https://morgunkonstantin.github.io/ecology-v2/assets/img/modular-prefab-og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Двое ставят готовую крышу с травой на деревянный модульный домик на опорах.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://morgunkonstantin.github.io/ecology-v2/assets/img/modular-prefab-og.jpg">
+  <meta name="theme-color" content="#faf6ef">
+  <meta name="color-scheme" content="light">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="alternate" type="application/rss+xml" title="ЭкоСознание — RSS" href="feed.xml">
+  <link rel="stylesheet" href="assets/site.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","name":"Модульный и префаб-дом: точность цеха вместо площадки","headline":"Модульный и префаб-дом: точность цеха вместо площадки","description":"Модульный и префаб-дом — сборка в цеху вместо стройки на площадке: панели или объёмные модули, точность и сухость, герметичность пассивного уровня, монтаж за часы. Чем префаб отличается от модульного, почему завод учится от дома к дому, история от каталожных домов Sears до премиального префаба, и честные ограничения — транспорт, габариты, замороженный проект.","inLanguage":"ru-RU","url":"https://morgunkonstantin.github.io/ecology-v2/essay-modular-prefab.html","isPartOf":{"@type":"WebSite","name":"ЭкоСознание","url":"https://morgunkonstantin.github.io/ecology-v2/"},"publisher":{"@type":"Organization","name":"ЭкоСознание","url":"https://morgunkonstantin.github.io/ecology-v2/"},"datePublished":"2026-09-11","image":"https://morgunkonstantin.github.io/ecology-v2/assets/img/modular-prefab-og.jpg","author":{"@type":"Organization","name":"ЭкоСознание"},"articleSection":"Строительство"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://morgunkonstantin.github.io/ecology-v2/"},{"@type":"ListItem","position":2,"name":"Архитектура","item":"https://morgunkonstantin.github.io/ecology-v2/section-architecture.html"},{"@type":"ListItem","position":3,"name":"Строительство","item":"https://morgunkonstantin.github.io/ecology-v2/section-construction.html"},{"@type":"ListItem","position":4,"name":"Модульный и префаб-дом: точность цеха вместо площадки","item":"https://morgunkonstantin.github.io/ecology-v2/essay-modular-prefab.html"}]}</script>
+<!-- /ECO:MANAGED:head -->
+</head>
+<body>
+<a class="skip-link" href="#content">Перейти к содержанию</a>
+
+<!-- ECO:MANAGED:nav -->
+<div class="g-nav-wrap" id="gNavWrap">
+  <div class="g-nav">
+    <a href="index.html" class="g-logo">
+      <svg viewBox="0 0 100 100" fill="none" class="logo-svg"><circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="3" stroke-dasharray="220 30" transform="rotate(-110 50 50)"/><circle cx="50" cy="50" r="7" fill="#4a7c59"/></svg>
+      <span class="g-logo-text">Эко<em>Сознание</em></span>
+    </a>
+    <ul class="g-links">
+      <li>
+        <button class="g-drop-btn" aria-expanded="false">
+          Разделы
+          <svg class="g-chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4 4-4"/></svg>
+        </button>
+        <div class="g-dropdown">
+          <a href="section-philosophy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 72 35 C 60 35, 54 49, 46 59 C 40 66, 29 67, 27 57 C 25 47, 35 38, 46 40 C 56 42, 62 56, 72 66" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="g-dd-name">Философия</span><span class="g-dd-num">01</span></a>
+          <a href="section-psychology.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="27" x2="50" y2="74" stroke-linecap="round"/><path d="M 31 33 C 31 55, 39 62, 50 62 C 61 62, 69 55, 69 33" stroke-linecap="round"/></svg></span><span class="g-dd-name">Психология</span><span class="g-dd-num">02</span></a>
+          <a href="section-lifestyle.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/></svg></span><span class="g-dd-name">Стиль жизни</span><span class="g-dd-num">03</span></a>
+          <a href="section-technologies.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 73.9 42.6 L 82.3 43.4 L 82.3 56.6 L 73.9 57.4 L 72.1 61.7 L 77.5 68.2 L 68.2 77.5 L 61.7 72.1 L 57.4 73.9 L 56.6 82.3 L 43.4 82.3 L 42.6 73.9 L 38.3 72.1 L 31.8 77.5 L 22.5 68.2 L 27.9 61.7 L 26.1 57.4 L 17.7 56.6 L 17.7 43.4 L 26.1 42.6 L 27.9 38.3 L 22.5 31.8 L 31.8 22.5 L 38.3 27.9 L 42.6 26.1 L 43.4 17.7 L 56.6 17.7 L 57.4 26.1 L 61.7 27.9 L 68.2 22.5 L 77.5 31.8 L 72.1 38.3 Z" stroke-linejoin="round"/><circle cx="50" cy="50" r="9"/></svg></span><span class="g-dd-name">Технологии</span><span class="g-dd-num">04</span></a>
+          <a href="section-food.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="g-dd-name">Питание</span><span class="g-dd-num">05</span></a>
+          <a href="section-architecture.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 28 46 L 50 26 L 72 46" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="51" x2="70" y2="51" stroke-linecap="round"/><line x1="35" y1="56" x2="35" y2="69" stroke-linecap="round"/><line x1="45" y1="56" x2="45" y2="69" stroke-linecap="round"/><line x1="55" y1="56" x2="55" y2="69" stroke-linecap="round"/><line x1="65" y1="56" x2="65" y2="69" stroke-linecap="round"/><line x1="30" y1="74" x2="70" y2="74" stroke-linecap="round"/></svg></span><span class="g-dd-name">Архитектура</span><span class="g-dd-num">06</span></a>
+          <a href="section-economy.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><path d="M 61 38 C 61 31, 39 30, 39 40 C 39 50, 61 50, 61 60 C 61 70, 39 69, 39 62" stroke-linecap="round"/></svg></span><span class="g-dd-name">Экономика</span><span class="g-dd-num">07</span></a>
+          <a href="section-education.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><g transform="translate(0 100) scale(1 -1)"><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></g></svg></span><span class="g-dd-name">Образование</span><span class="g-dd-num">08</span></a>
+          <a href="section-community.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="g-dd-name">Сообщество</span><span class="g-dd-num">09</span></a>
+          <a href="section-travel.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="g-dd-name">Путешествия</span><span class="g-dd-num">10</span></a>
+          <a href="section-health.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 42 27 H 58 V 42 H 73 V 58 H 58 V 73 H 42 V 58 H 27 V 42 H 42 Z" stroke-linejoin="round"/></svg></span><span class="g-dd-name">Здоровье</span><span class="g-dd-num">11</span></a>
+          <a href="section-science.html" class="g-dd-link"><span class="g-dd-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="g-dd-name">Наука</span><span class="g-dd-num">12</span></a>
+        </div>
+      </li>
+      <li><a href="about.html">О проекте</a></li>
+    </ul>
+    <button class="g-burger" id="gBurger" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</div>
+
+<div class="g-overlay" id="gOverlay">
+  <div class="g-ov-section">
+    <div class="g-ov-label">Разделы</div>
+    <div class="g-ov-grid">
+      <a href="section-philosophy.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 72 35 C 60 35, 54 49, 46 59 C 40 66, 29 67, 27 57 C 25 47, 35 38, 46 40 C 56 42, 62 56, 72 66" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="g-ov-name">Философия</span></a>
+      <a href="section-psychology.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="27" x2="50" y2="74" stroke-linecap="round"/><path d="M 31 33 C 31 55, 39 62, 50 62 C 61 62, 69 55, 69 33" stroke-linecap="round"/></svg></span><span class="g-ov-name">Психология</span></a>
+      <a href="section-lifestyle.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/></svg></span><span class="g-ov-name">Стиль жизни</span></a>
+      <a href="section-technologies.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 73.9 42.6 L 82.3 43.4 L 82.3 56.6 L 73.9 57.4 L 72.1 61.7 L 77.5 68.2 L 68.2 77.5 L 61.7 72.1 L 57.4 73.9 L 56.6 82.3 L 43.4 82.3 L 42.6 73.9 L 38.3 72.1 L 31.8 77.5 L 22.5 68.2 L 27.9 61.7 L 26.1 57.4 L 17.7 56.6 L 17.7 43.4 L 26.1 42.6 L 27.9 38.3 L 22.5 31.8 L 31.8 22.5 L 38.3 27.9 L 42.6 26.1 L 43.4 17.7 L 56.6 17.7 L 57.4 26.1 L 61.7 27.9 L 68.2 22.5 L 77.5 31.8 L 72.1 38.3 Z" stroke-linejoin="round"/><circle cx="50" cy="50" r="9"/></svg></span><span class="g-ov-name">Технологии</span></a>
+      <a href="section-food.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="g-ov-name">Питание</span></a>
+      <a href="section-architecture.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 28 46 L 50 26 L 72 46" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="51" x2="70" y2="51" stroke-linecap="round"/><line x1="35" y1="56" x2="35" y2="69" stroke-linecap="round"/><line x1="45" y1="56" x2="45" y2="69" stroke-linecap="round"/><line x1="55" y1="56" x2="55" y2="69" stroke-linecap="round"/><line x1="65" y1="56" x2="65" y2="69" stroke-linecap="round"/><line x1="30" y1="74" x2="70" y2="74" stroke-linecap="round"/></svg></span><span class="g-ov-name">Архитектура</span></a>
+      <a href="section-economy.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><path d="M 61 38 C 61 31, 39 30, 39 40 C 39 50, 61 50, 61 60 C 61 70, 39 69, 39 62" stroke-linecap="round"/></svg></span><span class="g-ov-name">Экономика</span></a>
+      <a href="section-education.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><g transform="translate(0 100) scale(1 -1)"><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></g></svg></span><span class="g-ov-name">Образование</span></a>
+      <a href="section-community.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="g-ov-name">Сообщество</span></a>
+      <a href="section-travel.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="g-ov-name">Путешествия</span></a>
+      <a href="section-health.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 42 27 H 58 V 42 H 73 V 58 H 58 V 73 H 42 V 58 H 27 V 42 H 42 Z" stroke-linejoin="round"/></svg></span><span class="g-ov-name">Здоровье</span></a>
+      <a href="section-science.html" class="g-ov-link"><span class="g-ov-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="g-ov-name">Наука</span></a>
+    </div>
+  </div>
+  <div class="g-ov-section">
+    <div class="g-ov-label">Навигация</div>
+    <div class="g-ov-simple-links">
+      <a href="index.html" class="g-ov-simple-link">Главная</a>
+      <a href="map.html" class="g-ov-simple-link">Карта связей</a>
+      <a href="contents.html" class="g-ov-simple-link">Все материалы</a>
+      <a href="revisions.html" class="g-ov-simple-link">Что не подтвердилось</a>
+      <a href="search.html" class="g-ov-simple-link">Поиск</a>
+      <a href="paths.html" class="g-ov-simple-link">Тропы чтения</a>
+      <a href="tree.html" class="g-ov-simple-link">Дерево материалов</a>
+      <a href="thinkers.html" class="g-ov-simple-link">Указатель имён</a>
+      <a href="about.html" class="g-ov-simple-link">О проекте</a>
+    </div>
+  </div>
+</div>
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<!-- /ECO:MANAGED:nav -->
+<main id="content" tabindex="-1">
+<!-- ECO:MANAGED:breadcrumb -->
+<nav class="breadcrumb" aria-label="Хлебные крошки"><a href="index.html">Главная</a> <span class="bc-sep">→</span> <a href="section-architecture.html">Архитектура</a> <span class="bc-sep">→</span> <a href="section-construction.html">Строительство</a> <span class="bc-sep">→</span> <span class="bc-current">Модульный и префаб-дом: точность цеха вместо площа…</span></nav>
+<!-- /ECO:MANAGED:breadcrumb -->
+
+<figure class="hero-cover" style="--cover-x-mobile:12%;">
+  <img src="assets/img/modular-prefab-hero-2000.webp"
+       srcset="assets/img/modular-prefab-hero-1200.webp 1200w, assets/img/modular-prefab-hero-2000.webp 2000w"
+       sizes="100vw" width="2000" height="666" fetchpriority="high" decoding="async"
+       alt="Двое ставят готовую крышу с травой на деревянный модульный домик на опорах.">
+</figure>
+
+<section class="hero" id="top">
+  <div>
+    <div class="hero-tag">Технология возведения · Каталог</div>
+    <h1>Модульный дом&nbsp;—<br><em>точность цеха,</em>собранная за день</h1>
+    <p class="hero-lead">Дом или его крупные части делают в цеху — с контролем геометрии, сухих материалов и герметичности, какой на стройплощадке под дождём не добиться, — потом привозят и ставят на готовые опоры за часы. Модули можно наращивать, когда семья растёт, и перевезти, когда она переезжает. Это единственная технология каталога, у которой каждый следующий дом учится у предыдущего: завод, в отличие от разовой бригады, накапливает опыт и повторяет удачные решения. И это метод, а не материал: в цеху можно собрать что угодно — от лёгкого каркаса до соломенных панелей.</p>
+  </div>
+  <div class="hero-meta">
+    <div><div class="meta-label">Суть</div><div class="meta-value">Сборка в цеху, монтаж за часы · Панели или объёмные модули · Метод, а не материал · Параллельно с фундаментом</div></div>
+    <div><div class="meta-label">Сильные стороны</div><div class="meta-value">Точность и сухость цеха · Герметичность пассивного уровня · Стройка — дни, а не месяцы · Меньше отходов · Дом растёт и переезжает</div></div>
+    <div><div class="meta-label">Где уместно</div><div class="meta-value">Любой климат; там, где важны скорость, предсказуемость и возможность изменить дом потом. Экономику делает серия.</div></div>
+  </div>
+</section>
+
+<div class="toc-bar">
+  <a href="#intro" class="active">Введение</a>
+  <a href="#how">Как устроено</a>
+  <a href="#physics">Почему работает</a>
+  <a href="#history">Откуда взялось</a>
+  <a href="#limits">Плюсы и ограничения</a>
+  <a href="#photos">Фото</a>
+  <a href="#outro">Итог</a>
+</div>
+
+<!-- ═══ ВВЕДЕНИЕ ══════════════════════════════════════════════════════════ -->
+<section class="content-section" id="intro">
+  <div style="max-width:820px;">
+    <div class="section-num">00</div>
+    <p style="font-family:'Jost',sans-serif;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sage-text);margin-bottom:1rem;"><a href="essay-building-technologies.html" style="color:var(--moss);text-decoration:none;border-bottom:1px dotted currentColor;">← Каталог технологий</a> · Технология возведения 09</p>
+    <h2>Точность цеха, <em>собранная за день</em></h2>
+    <p>Все предыдущие технологии каталога так или иначе строятся на месте, под открытым небом. Модульный дом делает противоположный ход: он переносит стройку с грязной, мокрой, зависящей от погоды площадки — в цех. Дом или его крупные части собирают в помещении, на заводе, с той точностью геометрии, сухостью материалов и герметичностью, каких на площадке под дождём не добиться. Готовые модули привозят на участок и ставят на подготовленные опоры за часы.</p>
+    <p>Из этого сдвига вытекает многое, что стройплощадке недоступно в принципе. Модули можно наращивать, когда семья растёт, и увозить, когда она переезжает. А главное — это единственная технология в списке, у которой каждый следующий дом учится у предыдущего: завод, в отличие от разовой бригады, накапливает опыт, отлаживает узлы и повторяет удачное решение из раза в раз. Панель учится у панели.</p>
+    <p>Ниже — как устроено такое строительство, почему цех даёт то, чего не даёт площадка, откуда пришла идея и в чём её честные ограничения. И почему «префаб» — давно не синоним унылой типовой коробки.</p>
+  </div>
+</section>
+
+<!-- ═══ 01 ═══════════════════════════════════════════════════════════════ -->
+<section class="content-section alt" id="how">
+  <div style="max-width:820px;">
+    <div class="section-num">01</div>
+    <div class="disc-meta">панели против объёмных модулей · сборка в цеху · монтаж на опоры за часы · это метод, а не материал</div>
+    <h2>Как это <em>устроено</em></h2>
+    <p>Важно сразу развести два понятия. <em style="color:var(--fern);">Префаб</em> (от prefabricated, «сборный») — это про то, что части дома изготовлены заранее на заводе. <em style="color:var(--fern);">Модульный</em> — частный случай префаба, где дом собирают из крупных объёмных блоков-комнат. Внутри этого есть градация: от плоских панелей (стены, перекрытия, кровля привозят листами и собирают на месте) до целых объёмных модулей — готовых комнат с отделкой, проводкой и даже мебелью, которые остаётся только состыковать.</p>
+    <p>Схема работы одинакова. Пока на участке готовят фундамент или опоры, в цеху параллельно собирают дом — и эти два процесса идут одновременно, а не один за другим, что резко экономит время. Готовые элементы грузят на транспорт, привозят, поднимают краном и стыкуют. Плоскопанельный дом собирают на площадке за дни; объёмно-модульный ставят и подключают буквально за часы.</p>
+    <p>И ключевое: модульность — это <em style="color:var(--fern);">метод, а не материал</em>. В цеху можно собрать что угодно — лёгкий деревянный <a href="essay-a-frame.html">каркас</a>, панели с соломенным или конопляным утеплителем, стальные или бетонные модули. Поэтому префаб не противостоит другим технологиям каталога, а способен вобрать их: соломенную стену, например, гораздо проще и суше собрать под крышей завода, чем в поле под дождём.</p>
+  </div>
+</section>
+
+<!-- ═══ 02 ═══════════════════════════════════════════════════════════════ -->
+<section class="content-section" id="physics">
+  <div style="max-width:820px;">
+    <div class="section-num">02</div>
+    <div class="disc-meta">контроль вместо погоды · сухие материалы и герметичность · меньше отходов · накопленный опыт</div>
+    <h2>Почему это <em>работает</em></h2>
+    <p>Главное преимущество цеха — контроль. На стройплощадке многое портит погода: материалы мокнут, размеры «гуляют» от сырости, зимой встают мокрые процессы, а качество зависит от конкретной бригады в конкретный день. В цеху всё это исчезает. Материалы остаются сухими, геометрия выверена по кондукторам, работа идёт круглый год под крышей. Отсюда — точность и сухость, которые дорогого стоят для долговечности дома.</p>
+    <p>Из этой точности напрямую следует энергоэффективность. Чтобы дом был по-настоящему тёплым, его оболочка должна быть герметична — без щелей, через которые уходит тепло; а идеальную герметичность легче обеспечить на выверенном стенде, чем на ветреной площадке. Не случайно многие дома пассивного стандарта делают именно в заводской сборке: там проще выдержать ту непрерывность утепления и плотность, которых требует <a href="essay-passive-design.html">пассивный дизайн</a>.</p>
+    <p>Есть и прямая экологическая выгода. На заводе меньше отходов: раскрой оптимизируют, обрезки идут в дело, а не на свалку, — тогда как обычная стройка выбрасывает заметную долю материалов. И работает эффект, недоступный разовой бригаде: завод учится. Ошибку, найденную в одном доме, исправляют для всех следующих; удачный узел повторяют. Качество не рождается заново на каждой площадке, а накапливается.</p>
+  </div>
+</section>
+
+<!-- ═══ 03 ═══════════════════════════════════════════════════════════════ -->
+<section class="content-section alt" id="history">
+  <div style="max-width:820px;">
+    <div class="section-num">03</div>
+    <div class="disc-meta">сборные дома по каталогу начала XX века · послевоенное жильё · современный «премиальный префаб»</div>
+    <h2>Откуда это <em>взялось</em></h2>
+    <p>Идея прислать дом по частям стара более века. В начале XX века по каталогам — например, знаменитым Sears Roebuck в США — можно было заказать целый дом: тебе привозили пронумерованные детали и инструкцию, а ты собирал жильё, как большой конструктор. Уже тогда завод делал то, что раньше делали на месте.</p>
+    <p>По-настоящему массовым префаб стал после Второй мировой войны, когда нужно было быстро и дёшево расселить миллионы людей. Индустриальное панельное домостроение решило эту задачу количеством — но заодно наградило само слово «префаб» дурной славой: типовые серые коробки, собранные наспех, стали символом безликости. Эта репутация до сих пор тянется за технологией.</p>
+    <p>И она давно устарела. Последние десятилетия префаб переживает переосмысление: заводская точность позволила делать не унылые коробки, а качественные, энергоэффективные и архитектурно интересные дома — вплоть до пассивных и «премиальных». Цех оказался не врагом хорошей архитектуры, а её инструментом: он даёт то, чего площадка дать не может, — повторяемое качество.</p>
+  </div>
+</section>
+
+<!-- ═══ 04 ═══════════════════════════════════════════════════════════════ -->
+<section class="content-section" id="limits">
+  <div style="max-width:820px;">
+    <div class="section-num">04</div>
+    <div class="disc-meta">плюсы и честные ограничения · транспорт, габариты, гибкость планировки</div>
+    <h2>Плюсы <em>и ограничения</em></h2>
+    <p>Достоинства модульного строительства почти все про надёжность и время. Заводская точность и сухость дают меньше брака и лучшую долговечность; герметичность легко довести до пассивного уровня. Стройка на участке занимает дни, а не месяцы, потому что фундамент и дом делают параллельно. Отходов меньше, а качество накапливается от дома к дому. И редкая для стройки гибкость во времени: модульный дом можно нарастить, когда семья растёт, разделить или даже перевезти на новое место.</p>
+    <p>Но у переноса стройки в цех есть неизбежная плата. Первое и главное — <em style="color:var(--fern);">транспорт и габариты</em>: готовый модуль надо довезти по дорогам, а значит, его размеры ограничены шириной полос, высотой мостов и грузоподъёмностью крана; перевозка тяжёлых объёмных блоков и сама стоит денег, и добавляет углеродный след, особенно если завод далеко. Второе — <em style="color:var(--fern);">меньшая свобода на месте</em>: дом надо спроектировать и во многом «заморозить» до начала производства, менять что-то по ходу, как на обычной стройке, уже нельзя, а планировка отчасти подчинена габаритам модуля.</p>
+    <p>Есть и системные нюансы. Заводское производство выгодно на потоке — единичный, штучный дом в цеху может выйти дороже, чем построенный на месте; экономику делает серия. И стыки между модулями — потенциально слабые места, за качеством которых нужно следить особо. Ни одно из этих ограничений не отменяет метод, но очерчивает, где он силён: там, где ценят скорость, предсказуемость и повторяемое качество.</p>
+  </div>
+</section>
+
+<!-- ECO:MANAGED:photos -->
+<style>
+/* ECO:MANAGED — фотографии: плитка и просмотр */
+.eco-photos-grid{columns:4 220px;column-gap:12px;margin-top:2rem;}
+.eco-photo{position:relative;margin:0 0 12px;break-inside:avoid;overflow:hidden;border-radius:3px;background:var(--warm);}
+.eco-photo a.eco-photo-img{display:block;cursor:zoom-in;}
+.eco-photo img{width:100%;height:auto;display:block;transition:transform .6s ease,filter .4s ease;}
+.eco-photo a.eco-photo-img:hover img,.eco-photo a.eco-photo-img:focus-visible img{transform:scale(1.035);filter:brightness(1.04);}
+.eco-photo figcaption{position:absolute;left:0;right:0;bottom:0;padding:1.6rem .8rem .55rem;font-size:.7rem;letter-spacing:.03em;color:#fff;background:linear-gradient(transparent,rgba(20,30,22,.62));opacity:0;transition:opacity .3s;pointer-events:none;}
+.eco-photo:hover figcaption,.eco-photo:focus-within figcaption{opacity:1;}
+.eco-photo figcaption a{color:#fff;text-decoration:none;border-bottom:1px dotted rgba(255,255,255,.7);pointer-events:auto;}
+@media(hover:none){.eco-photo figcaption{opacity:1;}}
+html .eco-photos-grid.eco-photos-grid--1{columns:1;max-width:560px;}.eco-photos-grid--2{columns:2;max-width:820px;}.eco-photos-grid--3{columns:3;}
+.eco-photos-lead{max-width:820px;}
+.eco-photos-note{margin-top:1.2rem;font-size:.72rem;color:var(--ink-light);font-style:italic;max-width:820px;}
+@media(max-width:560px){.eco-photos-grid,.essay .eco-photos-grid{columns:2;column-gap:8px;}.eco-photo{margin-bottom:8px;}.eco-photo figcaption{font-size:.6rem;padding:1.2rem .5rem .4rem;}}
+.eco-lb{position:fixed;inset:0;z-index:9999;background:rgba(16,24,18,.94);display:none;align-items:center;justify-content:center;flex-direction:column;}
+.eco-lb.open{display:flex;}
+.eco-lb img{max-width:min(92vw,1400px);max-height:80vh;object-fit:contain;display:block;box-shadow:0 10px 40px rgba(0,0,0,.4);}
+.eco-lb-cap{margin-top:1rem;max-width:min(92vw,900px);text-align:center;color:rgba(243,237,227,.85);font-size:.82rem;line-height:1.5;padding:0 1rem;}
+.eco-lb-cap a{color:var(--sage);text-decoration:none;border-bottom:1px dotted currentColor;}
+.eco-lb-n{color:rgba(243,237,227,.5);font-size:.7rem;letter-spacing:.15em;margin-top:.4rem;}
+.eco-lb button{position:absolute;background:none;border:0;color:#f3ede3;cursor:pointer;font:300 2.4rem/1 "Jost",sans-serif;padding:1rem;opacity:.75;transition:opacity .2s;}
+.eco-lb button:hover,.eco-lb button:focus-visible{opacity:1;}
+.eco-lb-x{top:.5rem;right:.8rem;}.eco-lb-p{left:.5rem;top:50%;transform:translateY(-50%);}.eco-lb-nx{right:.5rem;top:50%;transform:translateY(-50%);}
+@media(max-width:560px){.eco-lb button{font-size:1.9rem;padding:.6rem;}.eco-lb img{max-height:72vh;}}
+</style>
+<script>
+/* ECO:MANAGED — просмотр фото поверх страницы */
+(function(){if(window.__ecoLb)return;window.__ecoLb=1;
+function init(){var items=[].slice.call(document.querySelectorAll(".eco-photo a.eco-photo-img"));if(!items.length)return;
+ var lb=document.createElement("div");lb.className="eco-lb";lb.setAttribute("role","dialog");lb.setAttribute("aria-modal","true");lb.setAttribute("aria-label","Просмотр фотографии");
+ lb.innerHTML='<button class="eco-lb-x" aria-label="Закрыть">×</button><button class="eco-lb-p" aria-label="Предыдущее фото">‹</button><button class="eco-lb-nx" aria-label="Следующее фото">›</button><img alt=""><div class="eco-lb-cap"></div><div class="eco-lb-n"></div>';
+ document.body.appendChild(lb);var im=lb.querySelector("img"),cap=lb.querySelector(".eco-lb-cap"),num=lb.querySelector(".eco-lb-n"),cur=0,back=null;
+ function show(i){cur=(i+items.length)%items.length;var a=items[cur],t=a.querySelector("img"),fc=a.parentNode.querySelector("figcaption");
+  im.src=a.getAttribute("href");im.alt=t.alt;cap.innerHTML="";cap.appendChild(document.createTextNode(t.alt+" "));if(fc){var c=fc.cloneNode(true);cap.appendChild(document.createTextNode("· "));while(c.firstChild)cap.appendChild(c.firstChild);}
+  num.textContent=(cur+1)+" / "+items.length;}
+ function open(i){back=document.activeElement;show(i);lb.classList.add("open");document.documentElement.style.overflow="hidden";lb.querySelector(".eco-lb-x").focus();}
+ function close(){lb.classList.remove("open");im.removeAttribute("src");document.documentElement.style.overflow="";if(back)back.focus();}
+ items.forEach(function(a,i){a.addEventListener("click",function(e){if(e.metaKey||e.ctrlKey||e.shiftKey)return;e.preventDefault();open(i);});});
+ lb.querySelector(".eco-lb-x").onclick=close;lb.querySelector(".eco-lb-p").onclick=function(){show(cur-1);};lb.querySelector(".eco-lb-nx").onclick=function(){show(cur+1);};
+ lb.addEventListener("click",function(e){if(e.target===lb)close();});
+ document.addEventListener("keydown",function(e){if(!lb.classList.contains("open"))return;if(e.key==="Escape")close();else if(e.key==="ArrowLeft")show(cur-1);else if(e.key==="ArrowRight")show(cur+1);});
+ var sx=null;lb.addEventListener("touchstart",function(e){sx=e.touches[0].clientX;},{passive:true});lb.addEventListener("touchend",function(e){if(sx===null)return;var dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>50)show(cur+(dx<0?1:-1));sx=null;});
+}
+if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();})();
+</script>
+<section class="content-section eco-photos" id="photos">
+  <div>
+    <div class="section-num">—</div>
+    <h2>Как это <em>выглядит вживую</em></h2>
+    <p class="eco-photos-lead">Модули и морские контейнеры: от одного блока до двухэтажных домов, собранных как конструктор.</p>
+<div class="eco-photos-grid">
+  <figure class="eco-photo"><a class="eco-photo-img" href="assets/img/photos/modular-prefab/container.dreamhouse_CXRW1lThFLu_1.jpg"><img src="assets/img/photos/modular-prefab/container.dreamhouse_CXRW1lThFLu_1-sm.jpg" srcset="assets/img/photos/modular-prefab/container.dreamhouse_CXRW1lThFLu_1-sm.jpg 560w, assets/img/photos/modular-prefab/container.dreamhouse_CXRW1lThFLu_1.jpg 1080w" sizes="(max-width:560px) 50vw, 320px" width="560" height="560" loading="lazy" decoding="async" alt="Двухэтажный дом из контейнеров со сплошным остеклением, обходящий дерево."></a><figcaption>Фото: <a href="https://www.instagram.com/p/CXRW1lThFLu/" target="_blank" rel="noopener nofollow">@container.dreamhouse</a></figcaption></figure>
+  <figure class="eco-photo"><a class="eco-photo-img" href="assets/img/photos/modular-prefab/container.homebuilder_CaXowUCh8RJ_1.jpg"><img src="assets/img/photos/modular-prefab/container.homebuilder_CaXowUCh8RJ_1-sm.jpg" srcset="assets/img/photos/modular-prefab/container.homebuilder_CaXowUCh8RJ_1-sm.jpg 560w, assets/img/photos/modular-prefab/container.homebuilder_CaXowUCh8RJ_1.jpg 1080w" sizes="(max-width:560px) 50vw, 320px" width="560" height="560" loading="lazy" decoding="async" alt="Одноэтажный контейнерный дом с тентом над деревянной террасой."></a><figcaption>Фото: <a href="https://www.instagram.com/p/CaXowUCh8RJ/" target="_blank" rel="noopener nofollow">@container.homebuilder</a></figcaption></figure>
+  <figure class="eco-photo"><a class="eco-photo-img" href="assets/img/photos/modular-prefab/containerhomeslove_CaUr-YWB41-_1.jpg"><img src="assets/img/photos/modular-prefab/containerhomeslove_CaUr-YWB41-_1-sm.jpg" srcset="assets/img/photos/modular-prefab/containerhomeslove_CaUr-YWB41-_1-sm.jpg 560w, assets/img/photos/modular-prefab/containerhomeslove_CaUr-YWB41-_1.jpg 1080w" sizes="(max-width:560px) 50vw, 320px" width="560" height="560" loading="lazy" decoding="async" alt="Синий контейнер-домик с солнечными панелями на навесе и деревянной террасой."></a><figcaption>Фото: <a href="https://www.instagram.com/p/CaUr-YWB41-/" target="_blank" rel="noopener nofollow">@containerhomeslove</a></figcaption></figure>
+  <figure class="eco-photo"><a class="eco-photo-img" href="assets/img/photos/modular-prefab/containerhomesdaily_C430sMgo0gQ.jpg"><img src="assets/img/photos/modular-prefab/containerhomesdaily_C430sMgo0gQ-sm.jpg" srcset="assets/img/photos/modular-prefab/containerhomesdaily_C430sMgo0gQ-sm.jpg 560w, assets/img/photos/modular-prefab/containerhomesdaily_C430sMgo0gQ.jpg 1080w" sizes="(max-width:560px) 50vw, 320px" width="560" height="560" loading="lazy" decoding="async" alt="Дом из оранжевых контейнеров, поставленных в два яруса со смещением."></a><figcaption>Фото: <a href="https://www.instagram.com/p/C430sMgo0gQ/" target="_blank" rel="noopener nofollow">@containerhomesdaily</a></figcaption></figure>
+  <figure class="eco-photo"><a class="eco-photo-img" href="assets/img/photos/modular-prefab/containers.house_CW_E1x6NTu2.jpg"><img src="assets/img/photos/modular-prefab/containers.house_CW_E1x6NTu2-sm.jpg" srcset="assets/img/photos/modular-prefab/containers.house_CW_E1x6NTu2-sm.jpg 560w, assets/img/photos/modular-prefab/containers.house_CW_E1x6NTu2.jpg 1080w" sizes="(max-width:560px) 50vw, 320px" width="560" height="560" loading="lazy" decoding="async" alt="Двухэтажный модульный дом с деревянной обшивкой и винтовой лестницей на крышу."></a><figcaption>Фото: <a href="https://www.instagram.com/p/CW_E1x6NTu2/" target="_blank" rel="noopener nofollow">@containers.house</a></figcaption></figure>
+  <figure class="eco-photo"><a class="eco-photo-img" href="assets/img/photos/modular-prefab/containers.design_CXJYDXLgQlm.jpg"><img src="assets/img/photos/modular-prefab/containers.design_CXJYDXLgQlm-sm.jpg" srcset="assets/img/photos/modular-prefab/containers.design_CXJYDXLgQlm-sm.jpg 449w, assets/img/photos/modular-prefab/containers.design_CXJYDXLgQlm.jpg 866w" sizes="(max-width:560px) 50vw, 320px" width="449" height="560" loading="lazy" decoding="async" alt="Контейнеры красного и синего цвета, составленные в двухэтажный дом с балконами."></a><figcaption>Фото: <a href="https://www.instagram.com/p/CXJYDXLgQlm/" target="_blank" rel="noopener nofollow">@containers.design</a></figcaption></figure>
+  <figure class="eco-photo"><a class="eco-photo-img" href="assets/img/photos/modular-prefab/containers.design_CXU9jkDITxh.jpg"><img src="assets/img/photos/modular-prefab/containers.design_CXU9jkDITxh-sm.jpg" srcset="assets/img/photos/modular-prefab/containers.design_CXU9jkDITxh-sm.jpg 560w, assets/img/photos/modular-prefab/containers.design_CXU9jkDITxh.jpg 1080w" sizes="(max-width:560px) 50vw, 320px" width="560" height="552" loading="lazy" decoding="async" alt="Двухэтажный модульный дом с перголой и вечерней подсветкой."></a><figcaption>Фото: <a href="https://www.instagram.com/p/CXU9jkDITxh/" target="_blank" rel="noopener nofollow">@containers.design</a></figcaption></figure>
+  <figure class="eco-photo"><a class="eco-photo-img" href="assets/img/photos/modular-prefab/container.dreamhouse_CXY3qJ2rXwm_1.jpg"><img src="assets/img/photos/modular-prefab/container.dreamhouse_CXY3qJ2rXwm_1-sm.jpg" srcset="assets/img/photos/modular-prefab/container.dreamhouse_CXY3qJ2rXwm_1-sm.jpg 560w, assets/img/photos/modular-prefab/container.dreamhouse_CXY3qJ2rXwm_1.jpg 1080w" sizes="(max-width:560px) 50vw, 320px" width="560" height="560" loading="lazy" decoding="async" alt="Готовый модуль с панорамным остеклением на площадке перед установкой."></a><figcaption>Фото: <a href="https://www.instagram.com/p/CXY3qJ2rXwm/" target="_blank" rel="noopener nofollow">@container.dreamhouse</a></figcaption></figure>
+  <figure class="eco-photo"><a class="eco-photo-img" href="assets/img/photos/modular-prefab/livinginacontainer_CdwKC1Hry4h.jpg"><img src="assets/img/photos/modular-prefab/livinginacontainer_CdwKC1Hry4h-sm.jpg" srcset="assets/img/photos/modular-prefab/livinginacontainer_CdwKC1Hry4h-sm.jpg 560w, assets/img/photos/modular-prefab/livinginacontainer_CdwKC1Hry4h.jpg 1080w" sizes="(max-width:560px) 50vw, 320px" width="560" height="560" loading="lazy" decoding="async" alt="Тёмный дом из нескольких модулей вокруг общей террасы."></a><figcaption>Фото: <a href="https://www.instagram.com/p/CdwKC1Hry4h/" target="_blank" rel="noopener nofollow">@livinginacontainer</a></figcaption></figure>
+  <figure class="eco-photo"><a class="eco-photo-img" href="assets/img/photos/modular-prefab/smartcontainer_CgVFWUlOvi1_1.jpg"><img src="assets/img/photos/modular-prefab/smartcontainer_CgVFWUlOvi1_1-sm.jpg" srcset="assets/img/photos/modular-prefab/smartcontainer_CgVFWUlOvi1_1-sm.jpg 560w, assets/img/photos/modular-prefab/smartcontainer_CgVFWUlOvi1_1.jpg 1080w" sizes="(max-width:560px) 50vw, 320px" width="560" height="560" loading="lazy" decoding="async" alt="Контейнерный дом в лесу на склоне, обшитый тёмным металлом."></a><figcaption>Фото: <a href="https://www.instagram.com/p/CgVFWUlOvi1/" target="_blank" rel="noopener nofollow">@smartcontainer</a></figcaption></figure>
+  <figure class="eco-photo"><a class="eco-photo-img" href="assets/img/photos/modular-prefab/containerslove_Ca2VELQJOao_1.jpg"><img src="assets/img/photos/modular-prefab/containerslove_Ca2VELQJOao_1-sm.jpg" srcset="assets/img/photos/modular-prefab/containerslove_Ca2VELQJOao_1-sm.jpg 560w, assets/img/photos/modular-prefab/containerslove_Ca2VELQJOao_1.jpg 1080w" sizes="(max-width:560px) 50vw, 320px" width="560" height="560" loading="lazy" decoding="async" alt="Двухэтажный модульный дом с открытой деревянной галереей — визуализация."></a><figcaption>Фото: <a href="https://www.instagram.com/p/Ca2VELQJOao/" target="_blank" rel="noopener nofollow">@containerslove</a></figcaption></figure>
+  <figure class="eco-photo"><a class="eco-photo-img" href="assets/img/photos/modular-prefab/container.homebuilder_CaIOoVCBuFn_1.jpg"><img src="assets/img/photos/modular-prefab/container.homebuilder_CaIOoVCBuFn_1-sm.jpg" srcset="assets/img/photos/modular-prefab/container.homebuilder_CaIOoVCBuFn_1-sm.jpg 560w, assets/img/photos/modular-prefab/container.homebuilder_CaIOoVCBuFn_1.jpg 1080w" sizes="(max-width:560px) 50vw, 320px" width="560" height="560" loading="lazy" decoding="async" alt="Дом из тёмных контейнеров на нескольких уровнях с террасами и лестницей."></a><figcaption>Фото: <a href="https://www.instagram.com/p/CaIOoVCBuFn/" target="_blank" rel="noopener nofollow">@container.homebuilder</a></figcaption></figure>
+  <figure class="eco-photo"><a class="eco-photo-img" href="assets/img/photos/modular-prefab/container.homebuilder_Can--qtJmOy_1.jpg"><img src="assets/img/photos/modular-prefab/container.homebuilder_Can--qtJmOy_1-sm.jpg" srcset="assets/img/photos/modular-prefab/container.homebuilder_Can--qtJmOy_1-sm.jpg 560w, assets/img/photos/modular-prefab/container.homebuilder_Can--qtJmOy_1.jpg 1080w" sizes="(max-width:560px) 50vw, 320px" width="560" height="560" loading="lazy" decoding="async" alt="Дом из контейнера на деревянной террасе на фоне снежных гор."></a><figcaption>Фото: <a href="https://www.instagram.com/p/Can--qtJmOy/" target="_blank" rel="noopener nofollow">@container.homebuilder</a></figcaption></figure>
+  <figure class="eco-photo"><a class="eco-photo-img" href="assets/img/photos/modular-prefab/livinginacontainer_CaIiqBdrn0__1.jpg"><img src="assets/img/photos/modular-prefab/livinginacontainer_CaIiqBdrn0__1-sm.jpg" srcset="assets/img/photos/modular-prefab/livinginacontainer_CaIiqBdrn0__1-sm.jpg 448w, assets/img/photos/modular-prefab/livinginacontainer_CaIiqBdrn0__1.jpg 667w" sizes="(max-width:560px) 50vw, 320px" width="448" height="560" loading="lazy" decoding="async" alt="Остеклённый торец контейнерного дома среди растений, кресло на террасе."></a><figcaption>Фото: <a href="https://www.instagram.com/p/CaIiqBdrn0_/" target="_blank" rel="noopener nofollow">@livinginacontainer</a></figcaption></figure>
+  <figure class="eco-photo"><a class="eco-photo-img" href="assets/img/photos/modular-prefab/prefabnsmallhomes_CYkMh3Ts71G_1.jpg"><img src="assets/img/photos/modular-prefab/prefabnsmallhomes_CYkMh3Ts71G_1-sm.jpg" srcset="assets/img/photos/modular-prefab/prefabnsmallhomes_CYkMh3Ts71G_1-sm.jpg 560w, assets/img/photos/modular-prefab/prefabnsmallhomes_CYkMh3Ts71G_1.jpg 1080w" sizes="(max-width:560px) 50vw, 320px" width="560" height="554" loading="lazy" decoding="async" alt="Модульный дом с серыми и деревянными панелями фасада на деревянном настиле."></a><figcaption>Фото: <a href="https://www.instagram.com/p/CYkMh3Ts71G/" target="_blank" rel="noopener nofollow">@prefabnsmallhomes</a></figcaption></figure>
+  <figure class="eco-photo"><a class="eco-photo-img" href="assets/img/photos/modular-prefab/baluchonsolutions_Ca4nGVcL24u_7.jpg"><img src="assets/img/photos/modular-prefab/baluchonsolutions_Ca4nGVcL24u_7-sm.jpg" srcset="assets/img/photos/modular-prefab/baluchonsolutions_Ca4nGVcL24u_7-sm.jpg 560w, assets/img/photos/modular-prefab/baluchonsolutions_Ca4nGVcL24u_7.jpg 1067w" sizes="(max-width:560px) 50vw, 320px" width="560" height="560" loading="lazy" decoding="async" alt="Интерьер модуля из светлого дерева: откидной стол, табуреты и окно на поле."></a><figcaption>Фото: <a href="https://www.instagram.com/p/Ca4nGVcL24u/" target="_blank" rel="noopener nofollow">@baluchonsolutions</a></figcaption></figure>
+  <figure class="eco-photo"><a class="eco-photo-img" href="assets/img/photos/modular-prefab/compacthousing_Ca9_VNaDOIX_4.jpg"><img src="assets/img/photos/modular-prefab/compacthousing_Ca9_VNaDOIX_4-sm.jpg" srcset="assets/img/photos/modular-prefab/compacthousing_Ca9_VNaDOIX_4-sm.jpg 560w, assets/img/photos/modular-prefab/compacthousing_Ca9_VNaDOIX_4.jpg 1080w" sizes="(max-width:560px) 50vw, 320px" width="560" height="440" loading="lazy" decoding="async" alt="Модульный дом изнутри: тёмная кухня и раздвижная стеклянная стена на улицу."></a><figcaption>Фото: <a href="https://www.instagram.com/p/Ca9_VNaDOIX/" target="_blank" rel="noopener nofollow">@compacthousing</a></figcaption></figure>
+  <figure class="eco-photo"><a class="eco-photo-img" href="assets/img/photos/modular-prefab/prefabnsmallhomes_CYkMh3Ts71G_2.jpg"><img src="assets/img/photos/modular-prefab/prefabnsmallhomes_CYkMh3Ts71G_2-sm.jpg" srcset="assets/img/photos/modular-prefab/prefabnsmallhomes_CYkMh3Ts71G_2-sm.jpg 560w, assets/img/photos/modular-prefab/prefabnsmallhomes_CYkMh3Ts71G_2.jpg 1080w" sizes="(max-width:560px) 50vw, 320px" width="560" height="554" loading="lazy" decoding="async" alt="Распахнутая стеклянная стена модульного дома: гостиная и столовая выходят на террасу."></a><figcaption>Фото: <a href="https://www.instagram.com/p/CYkMh3Ts71G/" target="_blank" rel="noopener nofollow">@prefabnsmallhomes</a></figcaption></figure>
+  <figure class="eco-photo"><a class="eco-photo-img" href="assets/img/photos/modular-prefab/container.homebuilder_CXeMrCyhF7r_5.jpg"><img src="assets/img/photos/modular-prefab/container.homebuilder_CXeMrCyhF7r_5-sm.jpg" srcset="assets/img/photos/modular-prefab/container.homebuilder_CXeMrCyhF7r_5-sm.jpg 560w, assets/img/photos/modular-prefab/container.homebuilder_CXeMrCyhF7r_5.jpg 1079w" sizes="(max-width:560px) 50vw, 320px" width="560" height="560" loading="lazy" decoding="async" alt="Кухня в модульном доме с открытой дверью на террасу и в сад."></a><figcaption>Фото: <a href="https://www.instagram.com/p/CXeMrCyhF7r/" target="_blank" rel="noopener nofollow">@container.homebuilder</a></figcaption></figure>
+  <figure class="eco-photo"><a class="eco-photo-img" href="assets/img/photos/modular-prefab/container.dreamhouse_CXRW1lThFLu_5.jpg"><img src="assets/img/photos/modular-prefab/container.dreamhouse_CXRW1lThFLu_5-sm.jpg" srcset="assets/img/photos/modular-prefab/container.dreamhouse_CXRW1lThFLu_5-sm.jpg 560w, assets/img/photos/modular-prefab/container.dreamhouse_CXRW1lThFLu_5.jpg 1080w" sizes="(max-width:560px) 50vw, 320px" width="560" height="560" loading="lazy" decoding="async" alt="Двухэтажный дом из контейнеров в вечернем свете: стекло, бетон и лестница внутри."></a><figcaption>Фото: <a href="https://www.instagram.com/p/CXRW1lThFLu/" target="_blank" rel="noopener nofollow">@container.dreamhouse</a></figcaption></figure>
+  <figure class="eco-photo"><a class="eco-photo-img" href="assets/img/photos/modular-prefab/container.dreamhouse_CXRW1lThFLu_2.jpg"><img src="assets/img/photos/modular-prefab/container.dreamhouse_CXRW1lThFLu_2-sm.jpg" srcset="assets/img/photos/modular-prefab/container.dreamhouse_CXRW1lThFLu_2-sm.jpg 560w, assets/img/photos/modular-prefab/container.dreamhouse_CXRW1lThFLu_2.jpg 1080w" sizes="(max-width:560px) 50vw, 320px" width="560" height="560" loading="lazy" decoding="async" alt="Нижний этаж контейнерного дома под выступающим верхним модулем, гамаки-кресла и лес."></a><figcaption>Фото: <a href="https://www.instagram.com/p/CXRW1lThFLu/" target="_blank" rel="noopener nofollow">@container.dreamhouse</a></figcaption></figure>
+  <figure class="eco-photo"><a class="eco-photo-img" href="assets/img/photos/modular-prefab/containerhomesdaily_CavAQ3uhDUK_3.jpg"><img src="assets/img/photos/modular-prefab/containerhomesdaily_CavAQ3uhDUK_3-sm.jpg" srcset="assets/img/photos/modular-prefab/containerhomesdaily_CavAQ3uhDUK_3-sm.jpg 560w, assets/img/photos/modular-prefab/containerhomesdaily_CavAQ3uhDUK_3.jpg 1080w" sizes="(max-width:560px) 50vw, 320px" width="560" height="560" loading="lazy" decoding="async" alt="Интерьер контейнерного дома: диван, столик и маленькая белая кухня."></a><figcaption>Фото: <a href="https://www.instagram.com/p/CavAQ3uhDUK/" target="_blank" rel="noopener nofollow">@containerhomesdaily</a></figcaption></figure>
+  <figure class="eco-photo"><a class="eco-photo-img" href="assets/img/photos/modular-prefab/smartcontainer_CgVFWUlOvi1_4.jpg"><img src="assets/img/photos/modular-prefab/smartcontainer_CgVFWUlOvi1_4-sm.jpg" srcset="assets/img/photos/modular-prefab/smartcontainer_CgVFWUlOvi1_4-sm.jpg 560w, assets/img/photos/modular-prefab/smartcontainer_CgVFWUlOvi1_4.jpg 1080w" sizes="(max-width:560px) 50vw, 320px" width="560" height="560" loading="lazy" decoding="async" alt="Комната в контейнере с деревянным полом, стеклянной стеной в сад и телескопом."></a><figcaption>Фото: <a href="https://www.instagram.com/p/CgVFWUlOvi1/" target="_blank" rel="noopener nofollow">@smartcontainer</a></figcaption></figure>
+  <figure class="eco-photo"><a class="eco-photo-img" href="assets/img/photos/modular-prefab/smartcontainer_CgVFWUlOvi1_2.jpg"><img src="assets/img/photos/modular-prefab/smartcontainer_CgVFWUlOvi1_2-sm.jpg" srcset="assets/img/photos/modular-prefab/smartcontainer_CgVFWUlOvi1_2-sm.jpg 560w, assets/img/photos/modular-prefab/smartcontainer_CgVFWUlOvi1_2.jpg 1080w" sizes="(max-width:560px) 50vw, 320px" width="560" height="560" loading="lazy" decoding="async" alt="Два контейнера со стеклянными фасадами и терраса с креслами среди трав."></a><figcaption>Фото: <a href="https://www.instagram.com/p/CgVFWUlOvi1/" target="_blank" rel="noopener nofollow">@smartcontainer</a></figcaption></figure>
+  <figure class="eco-photo"><a class="eco-photo-img" href="assets/img/photos/modular-prefab/containerslove_Ca2VELQJOao_4.jpg"><img src="assets/img/photos/modular-prefab/containerslove_Ca2VELQJOao_4-sm.jpg" srcset="assets/img/photos/modular-prefab/containerslove_Ca2VELQJOao_4-sm.jpg 560w, assets/img/photos/modular-prefab/containerslove_Ca2VELQJOao_4.jpg 1000w" sizes="(max-width:560px) 50vw, 320px" width="560" height="560" loading="lazy" decoding="async" alt="Интерьер модульного дома: столовая с белыми стульями и стеклянной стеной."></a><figcaption>Фото: <a href="https://www.instagram.com/p/Ca2VELQJOao/" target="_blank" rel="noopener nofollow">@containerslove</a></figcaption></figure>
+  <figure class="eco-photo"><a class="eco-photo-img" href="assets/img/photos/modular-prefab/woodakit_CaR_VbmDewl.jpg"><img src="assets/img/photos/modular-prefab/woodakit_CaR_VbmDewl-sm.jpg" srcset="assets/img/photos/modular-prefab/woodakit_CaR_VbmDewl-sm.jpg 560w, assets/img/photos/modular-prefab/woodakit_CaR_VbmDewl.jpg 1080w" sizes="(max-width:560px) 50vw, 320px" width="560" height="560" loading="lazy" decoding="async" alt="Небольшой деревянный модульный домик с двускатной крышей на опорах."></a><figcaption>Фото: <a href="https://www.instagram.com/p/CaR_VbmDewl/" target="_blank" rel="noopener nofollow">@woodakit</a></figcaption></figure>
+</div>
+<p class="eco-photos-note">Фотографии принадлежат авторам, указанным под снимками; подпись ведёт на исходную публикацию в Instagram.</p>
+  </div>
+</section>
+<!-- /ECO:MANAGED:photos -->
+
+<!-- ═══ ИТОГ ══════════════════════════════════════════════════════════════ -->
+<section class="content-section alt" id="outro">
+  <div style="max-width:820px;">
+    <div class="section-num">—</div>
+    <h2>Итог: <em>дом, который учится</em></h2>
+    <p>Модульное строительство стоит в каталоге особняком, потому что это ответ не на вопрос «из чего», а на вопрос «где и как» строить. Перенеся сборку с площадки в цех, оно меняет саму природу стройки: вместо разовой, зависящей от погоды и бригады работы получается повторяемый, контролируемый, обучающийся процесс. И в этот процесс можно вложить любую из прочих технологий — от соломы до пассивного стандарта, — собрав их точнее и суше, чем позволяет поле.</p>
+    <p>У метода есть своя плата — дороги, габариты, замороженный на старте проект, — и потому он не универсален. Но там, где важны скорость, предсказуемость и качество, которое не нужно каждый раз изобретать заново, префаб даёт редкое: дом, собранный с точностью изделия, а не постройки. И, в отличие от всего остального в каталоге, — дом, который умеет учиться на своих предшественниках.</p>
+    <div style="margin-top:2.5rem;padding-top:2rem;border-top:1px solid rgba(74,124,89,0.15);font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--ink-light);text-align:center;font-size:1rem;">
+      Технология 09 из каталога «<a href="essay-building-technologies.html" style="color:var(--moss);">Из чего и как строить</a>» · раздел «Технологии»
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ECO:MANAGED:footer -->
+<footer class="gf">
+  <div class="gf-top">
+    <div class="gf-brand">
+      <a href="index.html" class="gf-logo">
+        <svg viewBox="0 0 100 100" fill="none" class="logo-svg" style="width:24px;height:24px;flex-shrink:0;"><circle cx="50" cy="50" r="40" stroke="#f3ede3" stroke-width="3" stroke-dasharray="220 30" transform="rotate(-110 50 50)"/><circle cx="50" cy="50" r="7" fill="#6ea87e"/></svg>
+        <span class="gf-logo-text">Эко<em>Сознание</em></span>
+      </a>
+      <p class="gf-tagline">Экологический взгляд как линза для любой сферы жизни</p>
+    </div>
+    <div class="gf-cols">
+      <div>
+        <div class="gf-col-title">Разделы</div>
+        <div class="gf-sections">
+          <a href="section-philosophy.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 72 35 C 60 35, 54 49, 46 59 C 40 66, 29 67, 27 57 C 25 47, 35 38, 46 40 C 56 42, 62 56, 72 66" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="gf-sec-name">Философия</span></a>
+          <a href="section-psychology.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="27" x2="50" y2="74" stroke-linecap="round"/><path d="M 31 33 C 31 55, 39 62, 50 62 C 61 62, 69 55, 69 33" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Психология</span></a>
+          <a href="section-lifestyle.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="14"/><line x1="50" y1="22" x2="50" y2="32" stroke-linecap="round"/><line x1="50" y1="68" x2="50" y2="78" stroke-linecap="round"/><line x1="22" y1="50" x2="32" y2="50" stroke-linecap="round"/><line x1="68" y1="50" x2="78" y2="50" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Стиль жизни</span></a>
+          <a href="section-technologies.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 73.9 42.6 L 82.3 43.4 L 82.3 56.6 L 73.9 57.4 L 72.1 61.7 L 77.5 68.2 L 68.2 77.5 L 61.7 72.1 L 57.4 73.9 L 56.6 82.3 L 43.4 82.3 L 42.6 73.9 L 38.3 72.1 L 31.8 77.5 L 22.5 68.2 L 27.9 61.7 L 26.1 57.4 L 17.7 56.6 L 17.7 43.4 L 26.1 42.6 L 27.9 38.3 L 22.5 31.8 L 31.8 22.5 L 38.3 27.9 L 42.6 26.1 L 43.4 17.7 L 56.6 17.7 L 57.4 26.1 L 61.7 27.9 L 68.2 22.5 L 77.5 31.8 L 72.1 38.3 Z" stroke-linejoin="round"/><circle cx="50" cy="50" r="9"/></svg></span><span class="gf-sec-name">Технологии</span></a>
+          <a href="section-food.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 50 25 Q 35 35,38 50 Q 42 65,50 70" stroke-linecap="round"/><path d="M 50 25 Q 65 35,62 50 Q 58 65,50 70" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Питание</span></a>
+          <a href="section-architecture.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 28 46 L 50 26 L 72 46" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="51" x2="70" y2="51" stroke-linecap="round"/><line x1="35" y1="56" x2="35" y2="69" stroke-linecap="round"/><line x1="45" y1="56" x2="45" y2="69" stroke-linecap="round"/><line x1="55" y1="56" x2="55" y2="69" stroke-linecap="round"/><line x1="65" y1="56" x2="65" y2="69" stroke-linecap="round"/><line x1="30" y1="74" x2="70" y2="74" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Архитектура</span></a>
+          <a href="section-economy.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><line x1="50" y1="25" x2="50" y2="75" stroke-linecap="round"/><path d="M 61 38 C 61 31, 39 30, 39 40 C 39 50, 61 50, 61 60 C 61 70, 39 69, 39 62" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Экономика</span></a>
+          <a href="section-education.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><g transform="translate(0 100) scale(1 -1)"><line x1="50" y1="32" x2="50" y2="72" stroke-linecap="round"/><path d="M 30 38 L 50 32 L 70 38 L 70 68 L 50 62 L 30 68 Z" stroke-linejoin="round"/></g></svg></span><span class="gf-sec-name">Образование</span></a>
+          <a href="section-community.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="32" r="7" fill="currentColor" stroke="none"/><circle cx="32" cy="62" r="7" fill="currentColor" stroke="none"/><circle cx="68" cy="62" r="7" fill="currentColor" stroke="none"/><line x1="50" y1="32" x2="32" y2="62" stroke-linecap="round"/><line x1="50" y1="32" x2="68" y2="62" stroke-linecap="round"/><line x1="32" y1="62" x2="68" y2="62" stroke-linecap="round"/></svg></span><span class="gf-sec-name">Сообщество</span></a>
+          <a href="section-travel.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="6" fill="currentColor" stroke="none"/><line x1="50" y1="20" x2="50" y2="44" stroke-linecap="round"/><path d="M 45 28 L 50 22 L 55 28" stroke-linecap="round" stroke-linejoin="round"/><line x1="80" y1="50" x2="56" y2="50" stroke-dasharray="2 4"/><line x1="20" y1="50" x2="44" y2="50" stroke-dasharray="2 4"/></svg></span><span class="gf-sec-name">Путешествия</span></a>
+          <a href="section-health.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 42 27 H 58 V 42 H 73 V 58 H 58 V 73 H 42 V 58 H 27 V 42 H 42 Z" stroke-linejoin="round"/></svg></span><span class="gf-sec-name">Здоровье</span></a>
+          <a href="section-science.html" class="gf-sec-link"><span class="gf-sec-icon"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="50" r="45"/><path d="M 30 50 Q 40 30, 50 50 T 70 50" stroke-linecap="round"/><circle cx="30" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="70" cy="50" r="3" fill="currentColor" stroke="none"/><circle cx="50" cy="50" r="3" fill="currentColor" stroke="none"/></svg></span><span class="gf-sec-name">Наука</span></a>
+        </div>
+      </div>
+      <div>
+        <div class="gf-col-title">Навигация</div>
+        <nav class="gf-nav-links">
+          <a href="index.html" class="gf-nav-link">Главная</a>
+          <a href="map.html" class="gf-nav-link">Карта связей</a>
+          <a href="paths.html" class="gf-nav-link">Тропы чтения</a>
+          <a href="tree.html" class="gf-nav-link">Дерево материалов</a>
+          <a href="revisions.html" class="gf-nav-link">Что не подтвердилось</a>
+          <a href="thinkers.html" class="gf-nav-link">Указатель имён</a>
+          <a href="search.html" class="gf-nav-link">Поиск</a>
+          <a href="method.html" class="gf-nav-link">Как устроены материалы</a>
+            <a href="about.html" class="gf-nav-link">О проекте</a>
+          <a href="glossary.html" class="gf-nav-link">Глоссарий</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="gf-bottom">
+    <span class="gf-copy">© 2026 ЭкоСознание</span>
+    <div class="gf-bottom-links">
+      <a href="about.html">О проекте</a>
+      <a href="glossary.html">Глоссарий</a>
+    </div>
+  </div>
+</footer>
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+<!-- /ECO:MANAGED:footer -->
+
+
+<!-- ECO:MANAGED:js -->
+<script src="assets/global.js" defer></script>
+<!-- /ECO:MANAGED:js -->
+</body>
+</html>
